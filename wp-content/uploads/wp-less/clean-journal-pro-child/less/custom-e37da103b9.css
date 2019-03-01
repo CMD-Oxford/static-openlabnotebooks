@@ -1,4 +1,4 @@
-@font-face {font-family: TitilliumText22LMedium;src: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../fonts/TitilliumText22L004.otf");}
+@font-face {font-family: TitilliumText22LMedium;src: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../fonts/TitilliumText22L004.otf");}
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {font-weight: bold;}
 @supports not (-webkit-overflow-scrolling: touch) {overflow-x: hidden;
   
@@ -42,12 +42,12 @@ body h1, body h2, body h3, body h4, body h5, body h6 {font-family: TitilliumText
 	@media screen and (max-width: 990px) {header#masthead .sidebar-header-right {padding: 10px 0 0 0;}}
 	header#masthead .sidebar-header-right .search-field {width: 100%;}
 	@media screen and (max-width: 540px) {header#masthead .sidebar-header-right .search-field {width: 85%;}}
-	body.category.category-3 .sidebar-header-right::after {width: 175px;height: 70px;background: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../images/custom/CHDI-logo.png") no-repeat scroll center center;}
-	body.category.category-4 .sidebar-header-right::after {width: 190px;height: 70px;background: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../images/custom/MUK-logo.png") no-repeat scroll center center;}
-	body.category.category-5 .sidebar-header-right::after {width: 171px;height: 70px;background: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../images/custom/TBTC-logo-old.jpg") no-repeat scroll center center;}
-	body.category.category-6 .sidebar-header-right::after {width: 133px;height: 70px;background: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../images/custom/FOP-Friends-logo.png") no-repeat scroll center center;}
+	body.category.category-3 .sidebar-header-right::after {width: 175px;height: 70px;background: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../images/custom/CHDI-logo.png") no-repeat scroll center center;}
+	body.category.category-4 .sidebar-header-right::after {width: 190px;height: 70px;background: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../images/custom/MUK-logo.png") no-repeat scroll center center;}
+	body.category.category-5 .sidebar-header-right::after {width: 171px;height: 70px;background: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../images/custom/TBTC-logo-old.jpg") no-repeat scroll center center;}
+	body.category.category-6 .sidebar-header-right::after {width: 133px;height: 70px;background: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../images/custom/FOP-Friends-logo.png") no-repeat scroll center center;}
 	body.category.category-7 .sidebar-header-right::after {width: 183px;height: 70px;}
-	body.category.category-15 .sidebar-header-right::after {width: 133px;height: 70px;background: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../images/custom/TBTC-logo.jpg") no-repeat scroll center center;}
+	body.category.category-15 .sidebar-header-right::after {width: 133px;height: 70px;background: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../images/custom/TBTC-logo.jpg") no-repeat scroll center center;}
 	body.category .sidebar-header-right::after {position: absolute;bottom: 15px;content: "";right: 20px;background-size: 100% !important;image-rendering: -webkit-optimize-contrast;}
 	@media screen and (max-width: 990px) {body.category .sidebar-header-right::after {display: none;}}
 	body.category .site-content > .wrapper {padding-top: 20px;}
@@ -143,7 +143,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {font-family: TitilliumText
 	@media screen and (max-width: 540px) {.ui-widget-content .read-more-link, .ui-widget-content .read-more-text, .ui-widget-content .wpcf7-submit {font-size: 14px;}}
 	.ui-widget-content .read-more-link a, .ui-widget-content .read-more-text a, .ui-widget-content .wpcf7-submit a {color: #1b8be0;text-decoration: none;}
 	.ui-widget-content .read-more-link a:hover, .ui-widget-content .read-more-text a:hover, .ui-widget-content .wpcf7-submit a:hover {color: #404040;text-decoration: underline;}
-	.login #login h1 a {background-image: url("https://openlabnotebooks.org/wp-content/themes/clean-journal-pro-child/less/../images/custom/SGC-logo-trans.png");width: 150px;background-size: 150px;margin-bottom: 0;}
+	.login #login h1 a {background-image: url("https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/less/../images/custom/SGC-logo-trans.png");width: 150px;background-size: 150px;margin-bottom: 0;}
 	.login #login #loginform {margin-top: 10px;}
 	.login #login .pw-weak {display: none !important;}
 	#poststuff #category-1, #poststuff #category-38 {display: none;}

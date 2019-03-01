@@ -3,4 +3,4 @@ Disallow: /wp-admin/
 Disallow: /people/
 Allow: /wp-admin/admin-ajax.php
 
-sitemap: https://openlabnotebooks.org/sitemap.xml
+sitemap: https://thesgc.github.io/static-openlabnotebooks/sitemap.xml
