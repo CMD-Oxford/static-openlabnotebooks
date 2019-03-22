@@ -42,4 +42,5 @@ jQuery(document).ready(function($) {
 	
 	$(".header-top-right .custom-icon").attr('target','_self');
 	
+	
 });
