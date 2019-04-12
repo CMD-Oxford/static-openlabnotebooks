@@ -12,7 +12,7 @@
 	<atom:link href="https://thesgc.github.io/static-openlabnotebooks/category/project/usp5/feed/" rel="self" type="application/rss+xml" />
 	<link>https://thesgc.github.io/static-openlabnotebooks/</link>
 	<description>A growing team of groundbreaking scientists around the world are now sharing their lab notebooks online</description>
-	<lastBuildDate>Sat, 23 Mar 2019 18:06:56 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 05 Apr 2019 14:33:26 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -26,6 +26,44 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Molecular Forecaster Inc (MFI): USP5 Zf-UBD</title>
+		<link>https://thesgc.github.io/static-openlabnotebooks/molecular-forecaster-inc-mfi-usp5-zf-ubd/</link>
+		<comments>https://thesgc.github.io/static-openlabnotebooks/molecular-forecaster-inc-mfi-usp5-zf-ubd/#respond</comments>
+		<pubDate>Mon, 01 Apr 2019 12:30:17 +0000</pubDate>
+		<dc:creator><![CDATA[Mandeep Mann]]></dc:creator>
+				<category><![CDATA[Mandeep Mann]]></category>
+		<category><![CDATA[USP5]]></category>
+
+		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2625</guid>
+		<description><![CDATA[In my last post, I mentioned I would be doing an internship at a biotech company in Montreal, Molecular Forecaster Inc as a part of a NSERC ChemNet CREATE grant. I’ve been in Montreal for about three weeks now and have had a chance to play around with the Forecaster software. I did preliminary docking <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/molecular-forecaster-inc-mfi-usp5-zf-ubd/">Read More ...</a>]]></description>
+				<content:encoded><![CDATA[<p>In my last post, I mentioned I would be doing an internship at a biotech company in Montreal, Molecular Forecaster Inc as a part of a NSERC ChemNet CREATE grant. I’ve been in Montreal for about three weeks now and have had a chance to play around with the Forecaster software. I did preliminary docking validation studies for USP5 Zf-UBD using the Forecaster FITTED program. You can find experimental details on <a href="https://zenodo.org/record/2620208#.XKIBqihKiUk">Zenodo</a>.</p>
+<p>First, I did self-docking studies with USP5 Zf-UBD co-crystal structures to assess the success of ligand docking. Self-docking is a method where a ligand is docked into the protein structure it was extracted from. To evaluate the correctness of the predicted pose, root mean square deviation values (RMSD) are evaluated; the lower the RMSD, the better the docked pose. The predicted binding poses of self-docked ligands was successful (RMSD &lt;2 Å), as shown in Figure 1.</p>
+<p><img class=" wp-image-2629 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401b-300x187.png" alt="" width="412" height="257" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401b-300x187.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401b.png 468w" sizes="(max-width: 412px) 100vw, 412px" /></p>
+<p style="text-align: center;"><strong>Figure 1.</strong> USP5 Zf-UBD self-docking RMSD</p>
+<p>An interesting aspect of the Forecaster platform is MATCHUP, where you can dock ligands to a protein and simulate the flexibility of the protein by providing several conformations of structures. The predicted binding poses of ligands docked using MATCHUP was also successful (RMSD &lt;2 Å), as shown in Figure 2, however the docked poses of compound DAT201 and compound DAT180 had higher RMSDs (RMSD &gt;1.5 Å) with flexible docking than rigid self-docking (Figure 3).</p>
+<p><img class=" wp-image-2630 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401c-300x168.png" alt="" width="447" height="250" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401c-300x168.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401c.png 536w" sizes="(max-width: 447px) 100vw, 447px" /></p>
+<p style="text-align: center;"><strong>Figure 2</strong>. Self-docking (rigid) vs. flexible docking (MATCHUP)</p>
+<p>&nbsp;</p>
+<p><img class=" wp-image-2628 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401a-300x148.png" alt="" width="527" height="260" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401a-300x148.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401a-768x380.png 768w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401a-1024x506.png 1024w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401a.png 1456w" sizes="(max-width: 527px) 100vw, 527px" /></p>
+<p style="text-align: center;"><strong>Figure 3</strong>. Flexible docked pose (green) versus co-crystallized ligand (grey) a) DAT201 b) DAT180 c) DAT194</p>
+<p>I also performed rigid cross-docking of the available USP5 Zf-UBD structures. Cross-docking is when different ligands are docked to a protein structure from a complex; this is useful when deciding which structure to use for virtual screening. Table 1 summarizes the results of the cross-docking study, where structure 6NFT had the best overall average RMSD.</p>
+<p style="text-align: center;"><strong>Table 1</strong>. Cross-docking: RMSDs of ligand pose with best energy complex from 3 poses</p>
+<p><img class="alignnone wp-image-2631 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401d-300x91.png" alt="" width="333" height="101" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401d-300x91.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401d.png 444w" sizes="(max-width: 333px) 100vw, 333px" /></p>
+<p>Lastly, I did a virtual screen of a library of USP5 Zf-UBD compounds that have already been experimentally tested to determine the best ranking docking method (Figure 3). Flexible docking with MATCHUP results in the best overall ranking of USP5 Zf-UBD compounds, when comparing ligand activity and docking scores, as shown by the area under the curve (AUC) values. The AUC of the docking methods are marginally better than random (Figure 3-red (AUC=0.5)) which may be because all compounds in the library tested, include a carboxylic chain that drives binding in the pocket, making it challenging to distinguish between active and inactive ligands. Next, I’ll be using Forecaster’s flexible protein docking with MATCHUP to screen larger commercial libraries in the search for different ligand scaffolds against USP5 Zf-UBD. Stay tuned!</p>
+<p><img class=" wp-image-2632 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401e-300x40.png" alt="" width="353" height="47" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401e-300x40.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401e.png 476w" sizes="(max-width: 353px) 100vw, 353px" /></p>
+<p><img class=" wp-image-2633 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401f-300x174.png" alt="" width="445" height="258" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401f-300x174.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/04/20190401f.png 624w" sizes="(max-width: 445px) 100vw, 445px" /></p>
+<p style="text-align: center;"><strong>Figure 3. </strong>ROC of virtual screen of USP5 Zf-UBD compounds</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><u>References </u></p>
+<p>Corbeil C.R., Englebienne P., Moitessier N. Docking ligands into flexible and solvated macromolecules. 1. Development and validation of FITTED 1.0<strong> </strong><em>J. Chem. Inf. Model.</em> (2007), 47, 2, 435-449</p>
+<p>Corbeil C.R., Moitessier N. Docking ligands into flexible and solvated macromolecules. 3. Impact of input ligand conformation, protein flexibility, and water molecules on the accuracy of docking programs<strong> </strong><em>J. Chem. Inf. Model.</em> (2009), 49, 4, 997-1009</p>
+<p>Moitessier N., Pottel J., Therrien E., Englebienne P., Liu Z., Tomberg A., Corbeil C.R. Medicinal Chemistry Projects Requiring Imaginative Structure-Based Drug Design Methods <em>Acc. Chem. Res.</em> (2016), 49 (9), 1646-1657</p>
+]]></content:encoded>
+			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/molecular-forecaster-inc-mfi-usp5-zf-ubd/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>USP5 Zf-UBD Co-Crystal Structure with Compound XSR00035795a &#038; Testing Selectivity</title>
 		<link>https://thesgc.github.io/static-openlabnotebooks/usp5-zf-ubd-co-crystal-structure-with-compound-xsr00035795a-testing-selectivity/</link>
 		<comments>https://thesgc.github.io/static-openlabnotebooks/usp5-zf-ubd-co-crystal-structure-with-compound-xsr00035795a-testing-selectivity/#respond</comments>
@@ -1085,47 +1123,6 @@
 ]]></content:encoded>
 			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/screening-compounds-against-usp5-zf-ubd-with-a-19f-nmr-assay-2/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Co-crystal structures of USP5 Zf-UBD and weak binding compounds</title>
-		<link>https://thesgc.github.io/static-openlabnotebooks/co-crystal-structures-of-usp5-zf-ubd-and-weak-binding-compounds/</link>
-		<comments>https://thesgc.github.io/static-openlabnotebooks/co-crystal-structures-of-usp5-zf-ubd-and-weak-binding-compounds/#comments</comments>
-		<pubDate>Tue, 17 Jul 2018 16:03:28 +0000</pubDate>
-		<dc:creator><![CDATA[Mandeep Mann]]></dc:creator>
-				<category><![CDATA[Mandeep Mann]]></category>
-		<category><![CDATA[USP5]]></category>
-
-		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=1512</guid>
-		<description><![CDATA[Based on previous 19F NMR and SPR assay experiments, 4 compounds were used to set up co-crystallization experiments (Table 1). I was able to get co-crystal structures of 3 of the 4 compounds! You can see full experimental details on Zenodo. Table 1. USP5 Zf-UBD ligands &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/co-crystal-structures-of-usp5-zf-ubd-and-weak-binding-compounds/">Read More ...</a>]]></description>
-				<content:encoded><![CDATA[<p>Based on previous <a href="https://thesgc.github.io/static-openlabnotebooks/compounds-of-interest-identified-by-screening-a-focused-library-against-usp5-zf-ubd-with-a-19f-nmr-assay/">19F NMR</a> and <a href="https://thesgc.github.io/static-openlabnotebooks/screening-compounds-of-interest-against-usp5-zf-ubd-with-a-surface-plasmon-resonance-assay/">SPR</a> assay experiments, 4 compounds were used to set up co-crystallization experiments (Table 1). I was able to get co-crystal structures of 3 of the 4 compounds! You can see full experimental details on <a href="https://zenodo.org/record/1313723#.W04PkdJKjIU">Zenodo</a>.</p>
-<p><strong>Table 1.</strong> USP5 Zf-UBD ligands</p>
-<p><img class=" wp-image-1515 alignleft" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717a-236x300.png" alt="" width="291" height="369" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717a-236x300.png 236w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717a.png 350w" sizes="(max-width: 291px) 100vw, 291px" /></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>All the compounds occupied the ubiquitin binding pocket, which is in agreement with the 19F NMR data. The electron density of the compounds were quite clear in the binding pocket of USP5 Zf-UBD. An omit map of DAT180 is shown in Figure 1.</p>
-<p><img class=" wp-image-1516 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717b-300x205.png" alt="" width="342" height="234" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717b-300x205.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717b.png 624w" sizes="(max-width: 342px) 100vw, 342px" /></p>
-<p style="text-align: center;"><strong>Figure 1</strong>. Omit map (σ2) of USP5<sup>171-290 </sup>and DAT180</p>
-<p>It is to be noted that DAT180 and DAT201 structures are now refined, were deposited in the PDB (6DXT, 6DXH) and will be available from there soon.  Table 2 summarizes the solved co-crystal structures for each compound.</p>
-<p><strong>Table 2</strong>. Summary of co-crystal structures</p>
-<p><img class="alignnone wp-image-1517" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717c-300x111.png" alt="" width="555" height="205" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717c-300x111.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717c.png 646w" sizes="(max-width: 555px) 100vw, 555px" /></p>
-<p>Interestingly, a loop in the vicinity of DAT201 adopted a conformation not seen in previous structures of USP5 (Figure 2). The novel cavity resulting from this conformational shift may be exploited for the design of follow-up compounds.</p>
-<p><img class="size-medium wp-image-1520 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717e-300x229.png" alt="" width="300" height="229" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717e-300x229.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717e.png 514w" sizes="(max-width: 300px) 100vw, 300px" /></p>
-<p style="text-align: center;"><strong>Figure 2</strong>. Overlay of DAT201 structure (yellow) &amp; PDB: <a href="https://www.rcsb.org/structure/2G43">2G43</a> (purple)</p>
-<p>The solved crystal structure of DAT194 was the most interesting of the solved structures. We saw electron density in the binding pocket but it did not correlate with the structure of the compound we had ordered! After some discussion, we tried to see if modeling an isomer of that compound would “fit” and it fit beautifully (Figure 3b). Both DAT194 and the Figure 3b isomer have the same mass. The purity of DAT194 was &gt;95% when checked by UPLC/MS. It’s very cool to see that the high resolution crystal structure can differentiate between isomers.</p>
-<p><img class="alignnone wp-image-1518 aligncenter" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717d-300x126.png" alt="" width="338" height="142" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717d-300x126.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/07/20180717d.png 386w" sizes="(max-width: 338px) 100vw, 338px" /></p>
-<p style="text-align: center;"><strong>Figure 3</strong>. a) Expected DAT194 structure b) Modeled isomer with same mass as DAT194</p>
-<p>In the future, I’ll be using computational techniques to prioritize chemical analogs that may better exploit the binding pocket. Decorating the core scaffold of the compounds with different chemical groups can potentially increase ligand affinity to the protein domain. Stay tuned!</p>
-]]></content:encoded>
-			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/co-crystal-structures-of-usp5-zf-ubd-and-weak-binding-compounds/feed/</wfw:commentRss>
-		<slash:comments>2</slash:comments>
 		</item>
 	</channel>
 </rss>
