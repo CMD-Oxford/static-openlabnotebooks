@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="24th April 2019 10:30 am" -->
+<!-- generated-on="10th May 2019 11:28 am" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-misc.xml</loc>
-		<lastmod>2019-04-23T19:45:27+00:00</lastmod>
+		<lastmod>2019-05-09T14:48:52+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-tax-category.xml</loc>
-		<lastmod>2019-04-23T19:45:27+00:00</lastmod>
+		<lastmod>2019-05-09T14:48:52+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-05.xml</loc>
+		<lastmod>2019-05-09T14:48:52+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-04.xml</loc>
-		<lastmod>2019-04-23T19:45:27+00:00</lastmod>
+		<lastmod>2019-04-25T16:53:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-03.xml</loc>
@@ -120,4 +124,4 @@
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-01.xml</loc>
 		<lastmod>2018-07-12T10:28:58+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: 055be57541cdb3d12c9a8db395546b77; Queries for sitemap: 6; Total queries: 21; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4.25MB -->
+</sitemapindex><!-- Request ID: 8af6439bb0386caffdc24dfa9565b69b; Queries for sitemap: 6; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4.25MB -->
