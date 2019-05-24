@@ -796,6 +796,7 @@
 	.pt-cv-colsys [data-cvc="9"] .pt-cv-content-item {width: 11.11111111%;}
 	.pt-cv-colsys [data-cvc="10"] .pt-cv-content-item {width: 10%;}
 	.pt-cv-colsys [data-cvc="11"] .pt-cv-content-item {width: 9.09090909%;}}
+.pt-cv-colsys .pt-cv-content-item {flex: none;max-width: initial;}
 .pt-cv-view a, .pt-cv-wrapper .btn {text-decoration: none !important;outline: 0 !important;font-style: normal;}
 .pt-cv-view a {pointer-events: auto;}
 .pt-cv-readmore {color: #fff;margin: 10px 0;max-width: 100%;}
