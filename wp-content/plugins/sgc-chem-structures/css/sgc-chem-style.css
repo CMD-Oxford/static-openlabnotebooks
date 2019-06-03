@@ -5,7 +5,10 @@
 .modal-content iframe {width: 900px;min-height: 520px;}
 .close {position: absolute;right: 20px;top: 30px;line-height: 14px;color: #aaa;float: right;font-size: 36px;font-weight: bold;}
 .close:hover, .close:focus {color: black;text-decoration: none;cursor: pointer;}
-#search-ok {background: #1287a8;color: #fff;font-size: 12px;font-weight: bold;letter-spacing: 1px;border: 1px solid #ccc;border-radius: 3px;padding: 10px 17px;transition: all .1s ease-in;text-decoration: none;}
+#search-ok {float: right;background: #1287a8;color: #fff;font-size: 12px;font-weight: bold;letter-spacing: 1px;border: 1px solid #ccc;border-radius: 3px;padding: 10px 17px;margin-left: 20px;transition: all .1s ease-in;text-decoration: none;}
 #search-ok:hover {background: #43abc9;}
+.search-option {float: right;margin-top: 1px;margin-left: 20px;}
+.search-option label {margin-right: 5px;}
+.search-option #select-type {height: 31px;}
 #search-results {margin-top: 15px;overflow: auto;}
 @media screen and (max-width: 990px) {#masthead a.sub-search {float: none;margin: auto;display: block;margin-top: 5px;}}

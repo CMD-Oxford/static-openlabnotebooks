@@ -32,7 +32,6 @@ jQuery( document ).ready(function() {
 	
 	
 	jQuery("#search-ok").on("click", function() {
-		console.log('Search clicked');
 		//Get hold of the Ketcher element
 		var ketcher = null;
 		
@@ -43,10 +42,12 @@ jQuery( document ).ready(function() {
 			var molBlockReplaced = molBlock.replace( /\n/g, "|8888|");
 			molBlockReplaced = molBlockReplaced.replace(/ /g, "|7777|");
 			
+			var sim_threshold =  jQuery('#threshold').val();
+			console.log(sim_threshold);
 			
 			//Search request			
 			var url = 'https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/sgc-chem-structures/sgc-chem-search.php';
-			var params = 'molblock=' + molBlockReplaced;
+			var params = 'molblock=' + molBlockReplaced + '&threshold=' + sim_threshold;
 			//console.log(params);
 			var http = new XMLHttpRequest();
 			http.open('POST', url, true);
@@ -56,7 +57,7 @@ jQuery( document ).ready(function() {
 				if(this.readyState == 4 && this.status == 200) {
 			
 					//Generate results table
-					console.log('Response: ' + http.response);
+					//console.log('Response: ' + http.response);
 					var searchResults = document.getElementById('search-results');
 
 				  var table = document.createElement('table');
@@ -124,18 +125,23 @@ jQuery( document ).ready(function() {
 					searchResults.innerHTML = '';
 					searchResults.appendChild(table);
 					
-
-					
-					
 				}
 			}
 			http.send(params);
 
-							
-			
-		
+
 		}
 	});
+
 	
+	jQuery('#select-type').change(function(){
+		if(jQuery(this).val() == 'similarity'){
+			jQuery('#threshold').val('').prop( "disabled", false);
+		}
+		else {
+			jQuery('#threshold').val('').prop( "disabled", true);
+		}
+	});
+
 
 })
