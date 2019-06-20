@@ -11,4 +11,5 @@
 .search-option label {margin-right: 5px;}
 .search-option #select-type {height: 31px;}
 #search-results {margin-top: 15px;overflow: auto;}
+#search-results tbody tr td {line-height: 130%;}
 @media screen and (max-width: 990px) {#masthead a.sub-search {float: none;margin: auto;display: block;margin-top: 5px;}}
