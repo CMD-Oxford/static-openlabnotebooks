@@ -12,7 +12,7 @@
 	<atom:link href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dipg/feed/" rel="self" type="application/rss+xml" />
 	<link>https://thesgc.github.io/static-openlabnotebooks/</link>
 	<description>A growing team of groundbreaking scientists around the world are now sharing their lab notebooks online</description>
-	<lastBuildDate>Thu, 20 Jun 2019 11:26:10 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 01 Jul 2019 16:49:26 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -26,6 +26,53 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Selectivity against, and action of, TNIK kinase in relation to ALK2.</title>
+		<link>https://thesgc.github.io/static-openlabnotebooks/selectivity-against-and-action-of-tnik-kinase-in-relation-to-alk2/</link>
+		<comments>https://thesgc.github.io/static-openlabnotebooks/selectivity-against-and-action-of-tnik-kinase-in-relation-to-alk2/#respond</comments>
+		<pubDate>Wed, 26 Jun 2019 15:58:08 +0000</pubDate>
+		<dc:creator><![CDATA[Ellie Williams]]></dc:creator>
+				<category><![CDATA[ACVR1/ALK2]]></category>
+		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
+		<category><![CDATA[Ellie Williams]]></category>
+		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
+
+		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=3015</guid>
+		<description><![CDATA[Sorry I’ve not written for a while. I had some annual leave to use up and then I’ve been helping out with a residential EMBO course that was being co-organised by one of the group leaders in my department. The course was an introduction to a wide variety of biochemical and biophysical techniques. I was <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/selectivity-against-and-action-of-tnik-kinase-in-relation-to-alk2/">Read More ...</a>]]></description>
+				<content:encoded><![CDATA[<p>Sorry I’ve not written for a while. I had some annual leave to use up and then I’ve been helping out with a residential EMBO course that was being co-organised by one of the group leaders in my department. The course was an introduction to a wide variety of biochemical and biophysical techniques. I was helping out with a purification comparison between nickel resin, talon (cobalt) resin and streptactin resin and talking a bit about thermal shift assays.</p>
+<p>Anyway, on with the science!</p>
+<p><strong>TNIK Selectivity:</strong></p>
+<p>TNIK is a protein kinase that Ros has previously talked about as being a potential off target hit for many of the M4K compounds along with DDR1. It is highly expressed in the brain which makes it of relevance to drug discovery for DIPG. Although its function is not entirely clear we know over-expression leads to cell rounding and it has been linked to some cell signalling effects in certain cancers. What makes it of most interest to us is that it seems to phosphorylate SMAD1 in an inhibitory position away from the tail where ALK2 phosphorylates SMAD1. Theoretically phosphorylation of SMAD1 by TNIK should inhibit phosphorylation elsewhere on SMAD1 by ALK2. This might make TNIK an indirect inhibitor of ALK2 function and thus we don’t want any drug we design against ALK2 to also hit TNIK.</p>
+<p>I was working with a student, Mira Rothweiler, who purified TNIK that we then used in further experiments. Details for the purification can be found on <a href="https://doi.org/10.5281/zenodo.3257646">Zenodo</a> along with other details of the experiments done.</p>
+<p>I have used Tm shift analysis (which is where you look at the change in melting point of a protein caused by the binding of a ligand, the tighter it binds the more it stabilises the protein and thus the larger the shift) to look at the binding of TNIK to all the M4K compounds and compared it to the shifts seen in ALK2. I plotted this data against each other with ALK2 shifts along the x-axis and the TNIK shifts along the y-axis. When compared against a 1:1 line, anything below the line is likely to be more selective for ALK2, anything above the line is likely to be selective for TNIK and anything close to the line shows minimal selectivity.</p>
+<p>The data shows that while there are a small handful of M4K compounds that do hit TNIK, the vast majority seem to have a relatively low effect on TNIK and a high effect on ALK2 suggesting they are selective. One of the most promising M4K targets (M4K2009) gives a 14.1 °C shift for ALK2 but only 1.8 °C for TNIK. This is really good news.</p>
+<p><img src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/Tm_shifts_TNIK-816x1024.png" alt="" width="780" height="979" class="alignnone size-large wp-image-3017" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/Tm_shifts_TNIK-816x1024.png 816w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/Tm_shifts_TNIK-239x300.png 239w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/Tm_shifts_TNIK-768x964.png 768w" sizes="(max-width: 780px) 100vw, 780px" /></p>
+<p><em>Tm shift results for ALK2 vs. TNIK for all M4K compounds. Top panel: plates K115 and K116. Bottom panel: plates K117 and K118.<br />
+</em></p>
+<p><strong>TNIK activity:</strong></p>
+<p>While it has been reported that TNIK phosphorylates SMAD1 in a non-standard location in vivo, I wanted to see if I could get the same effect in vitro in my own experiments. I mixed SMAD1 with TNIK in different concentrations and for different lengths of time and took samples to run on mass spec to see whether SMAD1 was getting phosphorylated. My results showed that with concentrations of TNIK of 10mM and over after just 10 minutes I was starting to see phosphorylation on SMAD1. However this doesn’t tell me where that phosphorylation is happening.</p>
+<p>I used another mass spec technique called ‘phosphomapping’ to identify where the phosphate was being added. Dr. Rod Chalk helped me with this for which I’m very thankful. This technique involved chopping the protein up into known chunks using different proteases that cut the protein at specific predictable places. We used five different proteases on different samples from the same incubation that all cut in different locations and then with each of the samples we ran half of it on the mass spec as was, and with the other half passed it over a Ti/Zr column to enrich the phosphopeptides within it and then ran it on the mass spec. The peptides detected are then run against a database of expected peptides created from knowing both the sequence of the protein and where the protease would have cut and then allowing for the possibility of modifications such as phosphorylation.</p>
+<p>From this we detected a number of different phosphorylation sites on both SMAD1 and TNIK which are summarised in the diagram below.</p>
+<p><img src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/phosphomapping-1024x703.png" alt="" width="780" height="535" class="alignnone size-large wp-image-3016" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/phosphomapping-1024x703.png 1024w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/phosphomapping-300x206.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/phosphomapping-768x527.png 768w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/06/phosphomapping.png 1314w" sizes="(max-width: 780px) 100vw, 780px" /></p>
+<p><em>Summary of identified peptides showing overall coverage (red), definitive phosphorylation (blue) and ambiguous phosphorylation (orange). Consensus site for TNIK phosphorylation of SMAD1 from Wang et. al. 2016 shown boxed in blue.</em></p>
+<p>&nbsp;</p>
+<p>A number of sites were identified on TNIK which must be due to auto-phosphorylation. Three sites were identified on SMAD1 definitively and a further three ambiguously.</p>
+<ul>
+<li>Three of these sites (one firm and two ambiguous &#8211; PI<strong>SS</strong>V<strong>S</strong>) are known sites of phosphorylation by ALK2 however we know that ALK2 cannot phosphorylate them alone and requires a type II receptor for this to happen – it seems that under in-vitro conditions TNIK is not under the same restriction.</li>
+<li>One of these sites (FE<strong>T</strong>VY) is not known to be involved in SMAD1 inhibition but it cannot be ruled out yet and may bear further investigation</li>
+<li>Two of these sites (one firm and one ambiguous – RN<strong>ST</strong>IE) are in the location suggested by Wang et. al. (2016) as being the consensus sequence for TNIK phosphorylation of SMAD1.</li>
+</ul>
+<p>&nbsp;</p>
+<p>The next thing to check will be if SMAD phosphorylated in the ‘inhibitory’ position stops ALK2 from phosphorylating SMAD in the ‘normal’ position.</p>
+<p>You can find more detail on experimental work <a href="https://doi.org/10.5281/zenodo.3257646">over on Zenodo</a>.</p>
+<p>&nbsp;</p>
+<p>Reference:</p>
+<p>Identification of Phosphorylation Consensus Sequences and Endogenous Neuronal Substrates of the Psychiatric Risk Kinase TNIK.  Wang Q, Amato SP, Rubitski DM, Hayward MM, Kormos BL, Verhoest PR, Xu L, Brandon NJ, Ehlers MD. Pharmacol Exp Ther. 2016 Feb;356(2):410-23. doi: 10.1124/jpet.115.229880. Epub 2015 Dec 8.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/selectivity-against-and-action-of-tnik-kinase-in-relation-to-alk2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Optimisation of viability assay for DIPG patient-derived cell lines</title>
 		<link>https://thesgc.github.io/static-openlabnotebooks/optimisation-of-viability-assay-for-dipg-patient-derived-cell-lines/</link>
 		<comments>https://thesgc.github.io/static-openlabnotebooks/optimisation-of-viability-assay-for-dipg-patient-derived-cell-lines/#respond</comments>
@@ -35,6 +82,7 @@
 		<category><![CDATA[Brain Tumours]]></category>
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Jong Fu Wong]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2935</guid>
 		<description><![CDATA[Background: Evaluation of the efficacy of M4K compounds in DIPG patient-derived cell lines is essential before any promising compounds can be further tested in mouse xenograft models. This approach can aid in narrowing down clinical compound candidates and reduce the time, resources and animal sacrifice needed downstream. A robust and efficient readout for the changes <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/optimisation-of-viability-assay-for-dipg-patient-derived-cell-lines/">Read More ...</a>]]></description>
@@ -76,6 +124,7 @@
 		<category><![CDATA[Alfredo Picado]]></category>
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC UNC Chapel Hill]]></category>
 		<category><![CDATA[Understudied Kinases]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2924</guid>
@@ -102,6 +151,7 @@
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Ellie Williams]]></category>
 		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2861</guid>
 		<description><![CDATA[Following up on the crystals from my last post I sent them along on the last Diamond trip we had to beamline I04 but regrettably didn’t get any usable datasets. Perhaps fortunately there is a possible explanation for this that isn’t just ‘the crystals were a bit too rubbish’. We send our crystals to the Diamond <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/acvr1-crystals-taken-to-the-diamond-light-source-beamline-i04-no-data-sets-collected/">Read More ...</a>]]></description>
@@ -126,6 +176,7 @@
 		<category><![CDATA[Brain Tumours]]></category>
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Liz Brown]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 		<category><![CDATA[Understudied Kinases]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2804</guid>
@@ -149,6 +200,7 @@
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Ellie Williams]]></category>
 		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2753</guid>
 		<description><![CDATA[I’ve been lucky enough to have a student (Mira) in the lab working with me for the past few weeks and so I’d like to write about the work that we’ve been doing together. We spent some time cleaning up an old sample of ALK2 that Ros had left over in the freezer to set <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/re-purification-of-alk2-for-crystallisation-with-different-compounds-from-m4k/">Read More ...</a>]]></description>
@@ -178,6 +230,7 @@
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Ellie Williams]]></category>
 		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2728</guid>
 		<description><![CDATA[I’ve got a few things to catch up with on the blog – one of them is to talk about a conference I attended in Oxford recently. I attended the Biochemical Society BMP Signalling in Cancer II meeting which was held in St. Annes College, Oxford. At this meeting I presented a poster on the <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/the-benefits-of-conference-attendance-bmp-signalling-in-cancer-ii/">Read More ...</a>]]></description>
@@ -200,6 +253,7 @@
 		<category><![CDATA[Brain Tumours]]></category>
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Jong Fu Wong]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2687</guid>
 		<description><![CDATA[Special thanks to: David Drewry – Helped with designing the nanoBRET tracers M4K pharma OICR chemist team – Synthesised the M4K1046-linker derivatives Carrow Wells (UNC) – Conjugated the M4K1046 to nanoBRET fluorophore Background: I have always wanted to establish nanoBRET target engagement assay for ALK5. Relative to dual luciferase promoter assay and immunofluorescent staining, nanoBRET <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/determining-whether-bespoke-tracers-work-with-alk5-in-nanobret-target-engagement-assay/">Read More ...</a>]]></description>
@@ -235,6 +289,7 @@
 		<category><![CDATA[Alfredo Picado]]></category>
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC UNC Chapel Hill]]></category>
 		<category><![CDATA[Understudied Kinases]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2598</guid>
@@ -262,6 +317,7 @@
 		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
 		<category><![CDATA[Ellie Williams]]></category>
 		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
+		<category><![CDATA[SGC Univ. of Oxford]]></category>
 
 		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2579</guid>
 		<description><![CDATA[In this post I’d like to return to looking at my work on phosphorylation. Phosphorylation is a key signalling method for activating the BMP pathway and inducing activity. Specifically activation of ALK2 by phosphorylation leads to phosphorylation of SMAD1 which leads to gene transcription that ultimately is responsible for bone formation. In this post I’m <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/phosphorylation-over-time-and-phosphomapping-experiments-to-investigate-the-influence-of-alk2-mutations-on-activity/">Read More ...</a>]]></description>
@@ -291,32 +347,6 @@
 <p>You can find the technical details for all these experiments over on <a href="https://doi.org/10.5281/zenodo.2591062">Zenodo.</a></p>
 ]]></content:encoded>
 			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/phosphorylation-over-time-and-phosphomapping-experiments-to-investigate-the-influence-of-alk2-mutations-on-activity/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Checking I haven&#8217;t got my cells mixed up&#8230;</title>
-		<link>https://thesgc.github.io/static-openlabnotebooks/checking-i-havent-got-my-cells-mixed-up/</link>
-		<comments>https://thesgc.github.io/static-openlabnotebooks/checking-i-havent-got-my-cells-mixed-up/#respond</comments>
-		<pubDate>Thu, 28 Feb 2019 18:56:05 +0000</pubDate>
-		<dc:creator><![CDATA[Elizabeth Brown]]></dc:creator>
-				<category><![CDATA[ACVR1/ALK2]]></category>
-		<category><![CDATA[Brain Tumours]]></category>
-		<category><![CDATA[Diffuse intrinsic pontine glioma]]></category>
-		<category><![CDATA[Fibrodysplasia ossificans progressiva]]></category>
-		<category><![CDATA[Liz Brown]]></category>
-		<category><![CDATA[Understudied Kinases]]></category>
-
-		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2542</guid>
-		<description><![CDATA[Did you know as many as 30% of the cells in labs could be misidentified? And what a nightmare it would be to find out years of your work are just completely wrong because you got your skin cells mixed up with your brain cells&#8230; So to avoid that catastrophe, I took some time to <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/checking-i-havent-got-my-cells-mixed-up/">Read More ...</a>]]></description>
-				<content:encoded><![CDATA[<p>Did you know as many as 30% of the cells in labs could be misidentified? And what a nightmare it would be to find out years of your work are just completely wrong because you got your skin cells mixed up with your brain cells&#8230;</p>
-<p>So to avoid that catastrophe, I took some time to check the DNA sequence of the ACVR1 gene, because for this gene we know what should be mutated (or not) for each of my cell lines. This way I can make sure that I haven&#8217;t mixed them up in the past year (<em>and</em> that they haven&#8217;t picked up new mutations in this important area all by themselves).</p>
-<p>All I had to do was collect the genomes of the cells, amplify specifically the ACVR1 gene, send it for overnight sequencing, and then I get a trace like this back from the facility:</p>
-<div id="attachment_2544" style="width: 790px" class="wp-caption aligncenter"><a href="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/02/R206H-sequence-1.png"><img class="wp-image-2544 size-large" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/02/R206H-sequence-1-1024x396.png" alt="Sequencing trace covering the R206H mutation in ACVR1 found in FOP and DIPG" width="780" height="302" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/02/R206H-sequence-1-1024x396.png 1024w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/02/R206H-sequence-1-300x116.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/02/R206H-sequence-1-768x297.png 768w" sizes="(max-width: 780px) 100vw, 780px" /></a><p class="wp-caption-text">Sequencing trace covering the R206H mutation in ACVR1 found in FOP and DIPG</p></div>
-<p>Each DNA base has one peak, except one that has both a guanine (G) and an adenine (A) DNA base. The adenine, present on one chromosome, causes the change from an arginine (R) to a histidine (H) at the 206th position of the ACVR1 protein i.e. the R206H mutation.</p>
-<p>This trace is from the HSJD-DIPG-007 cell line and is the mutation I expected. According to all my sequencing, none of my cell lines have gotten mixed up, yay!</p>
-<p>You can read the full details of how I did this, <a href="https://zenodo.org/record/2579809#.XHgumMD7SUk">here on Zenodo</a>.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/checking-i-havent-got-my-cells-mixed-up/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

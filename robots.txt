@@ -1,6 +1,18 @@
 User-agent: *
 Disallow: /wp-admin/
 Disallow: /people/
+Disallow: /active-people/
+Disallow: /past-people/
+Disallow: /disease-foundations/
+Disallow: /active-diseases/
+Disallow: /past-diseases/
+Disallow: /projects/
+Disallow: /active-projects/
+Disallow: /past-projects/
+Disallow: /laboratories/
+Disallow: /active-laboratories/
+Disallow: /past-laboratories/
+
 Allow: /wp-admin/admin-ajax.php
 
 sitemap: https://thesgc.github.io/static-openlabnotebooks/sitemap.xml

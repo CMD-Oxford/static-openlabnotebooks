@@ -1,108 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="20th June 2019 1:11 pm" -->
+<!-- generated-on="2nd July 2019 8:31 am" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-misc.xml</loc>
-		<lastmod>2019-06-20T11:26:10+00:00</lastmod>
+		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-tax-category.xml</loc>
-		<lastmod>2019-06-20T11:26:10+00:00</lastmod>
+		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-06.xml</loc>
-		<lastmod>2019-06-19T20:25:26+00:00</lastmod>
+		<lastmod>2019-07-01T15:07:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-05.xml</loc>
-		<lastmod>2019-06-02T11:37:14+00:00</lastmod>
+		<lastmod>2019-07-01T15:06:56+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-04.xml</loc>
-		<lastmod>2019-04-25T16:53:26+00:00</lastmod>
+		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-03.xml</loc>
-		<lastmod>2019-04-03T19:41:59+00:00</lastmod>
+		<lastmod>2019-07-01T15:06:56+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-02.xml</loc>
-		<lastmod>2019-02-28T18:56:05+00:00</lastmod>
+		<lastmod>2019-07-01T15:20:00+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-01.xml</loc>
-		<lastmod>2019-04-03T15:22:34+00:00</lastmod>
+		<lastmod>2019-07-01T15:21:58+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-12.xml</loc>
-		<lastmod>2019-04-03T15:20:20+00:00</lastmod>
+		<lastmod>2019-07-01T15:06:56+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-11.xml</loc>
-		<lastmod>2019-04-03T15:18:15+00:00</lastmod>
+		<lastmod>2019-07-01T15:20:00+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-10.xml</loc>
-		<lastmod>2019-04-03T15:16:43+00:00</lastmod>
+		<lastmod>2019-07-01T15:20:00+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-09.xml</loc>
-		<lastmod>2019-04-03T15:13:23+00:00</lastmod>
+		<lastmod>2019-07-01T15:20:00+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-08.xml</loc>
-		<lastmod>2019-04-23T13:53:11+00:00</lastmod>
+		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-07.xml</loc>
-		<lastmod>2019-04-03T15:09:28+00:00</lastmod>
+		<lastmod>2019-07-01T15:09:35+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-06.xml</loc>
-		<lastmod>2018-10-04T08:27:48+00:00</lastmod>
+		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-05.xml</loc>
-		<lastmod>2019-04-03T14:43:56+00:00</lastmod>
+		<lastmod>2019-07-01T15:19:14+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-04.xml</loc>
-		<lastmod>2019-02-12T15:46:47+00:00</lastmod>
+		<lastmod>2019-07-01T15:09:35+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-03.xml</loc>
-		<lastmod>2018-07-03T16:08:54+00:00</lastmod>
+		<lastmod>2019-07-01T15:09:35+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-02.xml</loc>
-		<lastmod>2018-03-23T21:06:24+00:00</lastmod>
+		<lastmod>2019-07-01T15:09:35+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2018-01.xml</loc>
-		<lastmod>2019-02-12T15:44:50+00:00</lastmod>
+		<lastmod>2019-07-01T15:09:35+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2017-12.xml</loc>
-		<lastmod>2018-03-23T21:06:07+00:00</lastmod>
+		<lastmod>2019-07-01T15:06:16+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2017-11.xml</loc>
-		<lastmod>2018-01-17T17:45:32+00:00</lastmod>
+		<lastmod>2019-07-01T15:06:16+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2017-10.xml</loc>
-		<lastmod>2019-02-12T15:41:12+00:00</lastmod>
+		<lastmod>2019-07-01T14:05:40+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2017-09.xml</loc>
-		<lastmod>2019-02-12T15:38:50+00:00</lastmod>
+		<lastmod>2019-07-01T14:06:01+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2017-08.xml</loc>
-		<lastmod>2019-02-12T15:36:28+00:00</lastmod>
+		<lastmod>2019-07-01T14:06:20+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2017-07.xml</loc>
-		<lastmod>2019-02-12T15:22:06+00:00</lastmod>
+		<lastmod>2019-07-01T14:06:31+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2019-07.xml</loc>
+		<lastmod>2019-07-01T11:35:17+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2019-06.xml</loc>
@@ -114,7 +118,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-03.xml</loc>
-		<lastmod>2019-01-30T14:23:55+00:00</lastmod>
+		<lastmod>2019-06-26T08:47:53+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-02.xml</loc>
@@ -124,4 +128,4 @@
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-01.xml</loc>
 		<lastmod>2018-07-12T10:28:58+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: 7864ea7180e6da523024571482ebcf85; Queries for sitemap: 6; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4.25MB -->
+</sitemapindex><!-- Request ID: b8c2c6d92f73baabcd1c10e73e144ac6; Queries for sitemap: 6; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 34.25MB -->

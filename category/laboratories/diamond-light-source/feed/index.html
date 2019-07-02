@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Diamond Light Source &#8211; openlabnotebooks.org</title>
+	<atom:link href="https://thesgc.github.io/static-openlabnotebooks/category/laboratories/diamond-light-source/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thesgc.github.io/static-openlabnotebooks/</link>
+	<description>A growing team of groundbreaking scientists around the world are now sharing their lab notebooks online</description>
+	<lastBuildDate>Mon, 01 Jul 2019 16:49:26 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+
+<image>
+	<url>https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/01/cropped-lab-jar02-32x32.png</url>
+	<title>Diamond Light Source &#8211; openlabnotebooks.org</title>
+	<link>https://thesgc.github.io/static-openlabnotebooks/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>More crystals through XChem</title>
+		<link>https://thesgc.github.io/static-openlabnotebooks/more-crystals-through-xchem/</link>
+		<comments>https://thesgc.github.io/static-openlabnotebooks/more-crystals-through-xchem/#respond</comments>
+		<pubDate>Thu, 10 Jan 2019 11:54:08 +0000</pubDate>
+		<dc:creator><![CDATA[Jose Brandao-Neto]]></dc:creator>
+				<category><![CDATA[Diamond Light Source]]></category>
+		<category><![CDATA[Jose Brandao-Neto]]></category>
+		<category><![CDATA[XChem]]></category>
+
+		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2372</guid>
+		<description><![CDATA[Following an early commissioning stage, XChem crystallised its core xray collection protocol as 180 degrees rotation in 60 seconds, which provides PanDDA with good datasets. But what has never been fully characterised is the lowest dose per crystal required for PanDDA to work. XChem now has an established hit rate profile where, based on our <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/more-crystals-through-xchem/">Read More ...</a>]]></description>
+				<content:encoded><![CDATA[<p>Following an early commissioning stage, XChem crystallised its core xray collection protocol as 180 degrees rotation in 60 seconds, which provides PanDDA with good datasets. But what has never been fully characterised is the lowest dose per crystal required for PanDDA to work. XChem now has an established hit rate profile where, based on our core xray protocol, we expect between 8 and 40 fragment hits out of the standrad supply screen of 400 fragments from the DSIP library (2% to 10% hit rate using the Diamond, SGC and Enamine fragment library poised for follow up [cox et al 2017]).</p>
+<p>In a short series of posts I will tell my journey to arrive at the first round of xray dose optimisation, notably to reduce the core expriment to 30s per 180 degree rotation, currently (December 2018) at its first pilot runs as a protocol after 3 rounds of characterisation experiments.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/more-crystals-through-xchem/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Update on batch deposition of XChem structures</title>
+		<link>https://thesgc.github.io/static-openlabnotebooks/update-on-batch-deposition-of-xchem-structures/</link>
+		<comments>https://thesgc.github.io/static-openlabnotebooks/update-on-batch-deposition-of-xchem-structures/#respond</comments>
+		<pubDate>Tue, 18 Dec 2018 12:21:14 +0000</pubDate>
+		<dc:creator><![CDATA[Tobias Krojer]]></dc:creator>
+				<category><![CDATA[Diamond Light Source]]></category>
+		<category><![CDATA[Tobias Krojer]]></category>
+		<category><![CDATA[XChem]]></category>
+
+		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=2292</guid>
+		<description><![CDATA[The year is coming to an end and I want to start my blog by giving you an overview of a project that kept me busy for the better part of it. Our existing Protein Data Bank (PDB) batch deposition mechanism underwent a major overhaul recently and we are finally in a position where we <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/update-on-batch-deposition-of-xchem-structures/">Read More ...</a>]]></description>
+				<content:encoded><![CDATA[<p>The year is coming to an end and I want to start my blog by giving you an overview of a project that kept me busy for the better part of it. Our existing <a href="https://www.wwpdb.org/">Protein Data Bank (PDB)</a> batch deposition mechanism underwent a major overhaul recently and we are finally in a position where we can relatively quickly deposit all the structures from an <a href="https://www.diamond.ac.uk/Instruments/Mx/Fragment-Screening.html">XChem fragment screening</a> campaign.</p>
+<p>&nbsp;</p>
+<p>I assume not everyone will be familiar with what this is about, so here is some background of the problems we are trying to solve: once the XChem facility started churning out more and more protein-fragment complex structures, it became obvious that we needed new tools to support PDB deposition. Doing it one-by-one through the wwPDB website would be too time-consuming. Additionally, the multi-dataset nature of the experiment and the way we analyse the data made it necessary to think about new ways to help the end-user understand the basis of the modelling decisions taken by the depositor.</p>
+<p>&nbsp;</p>
+<h4>Summary</h4>
+<p>The post is rather long, because it contains quite a few details which might be of interest if you are confronted with having to deposit many similar structures or if you want to publish findings based on a <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5413968/">PanDDA</a> analysis. Here&#8217;s a quick summary if you are in a rush:</p>
+<ul>
+<li>Each deposited structure contains direct evidence for the modelled ligand, i.e. the PanDDA event map</li>
+<li>All apo structures that were collected during an XChem experiment are deposited as a single PDB entry so that the data can be used to reproduce the PanDDA analysis</li>
+<li>File preparation for batch deposition of ligand bound and apo structures is facilitated by XChemExplorer</li>
+</ul>
+<p>&nbsp;</p>
+<h3>PDB group depositions</h3>
+<p>The first problem, i.e. deposition of many structures, was solved quickly, because, fortunately for us, the PDB has already developed a new, but not very well known, portal to support parallel structure depositions, so-called <a href="https://deposit-group-1.rcsb.rutgers.edu/groupdeposit/">group depositions</a>. It’s pretty nifty, you can bundle all your structure and structure factor mmcif files in a single tar archive, then you upload the file and press submit. That&#8217;s it! Well, almost. One still needs to provide the usual experimental data like protein sequence, crystallization condition, authors etc. in the header of each mmcif file, but I’ve implemented a solution in the<a href="https://github.com/xchem/XChemExplorer"> XChemExplorer (XCE)</a> software so that one only needs to do it once and the information then gets propagated to all the structures in a group (Figure 1). Once the user has provided this information in XCE, they need to flag which structures they want to deposit and the program will generate the respective files, ready for upload. That was the – conceptually – easy bit. Next, we had to think about ways to provide evidence for the modelled ligands.</p>
+<div id="attachment_2294" style="width: 523px" class="wp-caption aligncenter"><img class=" wp-image-2294" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_1-300x213.png" alt="" width="513" height="364" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_1-300x213.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_1-768x544.png 768w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_1.png 907w" sizes="(max-width: 513px) 100vw, 513px" /><p class="wp-caption-text">Figure 1. XChemExplorer (XCE) enables preparation of files for mass structure deposition through the PDB group deposition portal. Users only need to provide a minimal amount of information which is then propagated to all files in a group. The remaining information is captured from the XCE database and the project directory. XCE uses PDB_EXTRACT and SF_CONVERT to generate structure and structure factor mmcif files, respectively. XCE can generate and bundle mmcif files of ligand-bound models, as well as of the ground-state model and the corresponding apo structure factor mmcif files.</p></div>
+<h3></h3>
+<h3>Evidence for modelled ligands</h3>
+<p>We routinely use the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5413968/">Pan-Dataset Density Analysis (PanDDA)</a> method to identify bound fragments and because the algorithm is so sensitive, we are often able to detect weakly bound compounds which would go unnoticed in 2mFo-DFc maps. However, the concept of PanDDA event maps is still just emerging in the community and so the question is how can we provide the rest of the world with evidence that these ligands really are bound? The last few years have seen a few efforts to improve the quality of protein-ligand structures in the PDB and there have been several publications which highlight dubiously modelled ligands. So, what to do in order to avoid that XChem will soon find itself in the pillory? Together with Stephen Burley’s team at the RCSB, we enabled inclusion of PanDDA event maps in the deposited structure factor mmcif file (Figure 2). This allows everyone – with a bit of crystallographic knowledge – to download the mmcif file and recreate the maps that were used to model the bound ligand and eventual changes in the protein structure. Ideally, the event maps would be displayed on the different PDB websites, but in the meantime, we have created our own <a href="https://www.thesgc.org/fragment-screening">interactive HTML summaries</a> which users can use to share their results with the world. On a personal note, I would like to add that there certainly are ‘fantasy’ models in the PDB, but this is probably unavoidable given the sheer number of structures in the archive and that overall, protein crystallographers are most likely not too dissimilar to the rest of humanity when it comes to the distribution of certain traits. Still, I am sure that most scientists are aware of the limitations of some of their models, but they have no possibility to communicate their concerns. However, this is another topic which I will elaborate on in one of my next blog posts.</p>
+<p>&nbsp;</p>
+<h3>Reproduction of results</h3>
+<p>Finally, we also thought about ways to enable anyone to reproduce the event maps. Ultimately, PanDDA event maps cannot be reproduced unless you have all the apo datasets available to calculate the respective statistical maps. Making all the data available, also ensures that PanDDA users can be confident when publishing their results. Technically, this should be trivial in the year 2018 given that the file sizes involved are negligible by today’s standards. The more important (and contentious) question is ‘<em>where should the data live?</em>’. The PDB recommended to deposit them in their archive so that they will be properly curated and remain available in perpetuity. Hence, our initial strategy in 2017 was to bundle all the apo structures in another tar archive and deposit them in a separate group deposition session. But that meant that every apo structure was treated as a unique structure and therefore got its own PDB ID. Needless to say that this created confusion in some parts of the community who were wondering what we are up to. This did clearly not work as expected, not least because even if someone would like the run PanDDA again on the data, they would need a lot of patience if they want to download all the datasets from the PDB. We contemplated to use the <a href="https://zenodo.org/">ZENODO</a> data repository as an alternative (and we still recommend to use this platform to upload the complete PanDDA analysis anyway), but finally we came up with a, which at least I believe, much more elegant solution. Instead of depositing every apo PDB file (which are almost identical after initial refinement), we deposit only the ground-state model (and the corresponding mean map) and then include the structure factors of every dataset that was collected during the XChem experiment in the final structure factor mmcif file (Figure 2). The file will often be several Gb large, but users will now be able to download all the data that they need to reproduce a PanDDA analysis in one go.</p>
+<div id="attachment_2295" style="width: 523px" class="wp-caption aligncenter"><img class="wp-image-2295" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_2-300x214.png" alt="" width="513" height="365" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_2-300x214.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_2-768x547.png 768w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/12/figure_2.png 850w" sizes="(max-width: 513px) 100vw, 513px" /><p class="wp-caption-text">Figure 2. File structure and contents of the deposited mmcif files. Each ligand-bound structure (changed_state.pdb) does consist of an mmcif file containing its coordinates and experimental data and a structure factor mmcif file which contains the measured data as well as an additional data block for each PanDDA event map. The ground-state model will be included in a separate mmcif file. The corresponding structure factor mmcif file does contain one block for the mean map and then one block each for every datasets which was part of the XChem experiment. In case someone wants to reproduce the PanDDA analysis, they can download the ground-state deposition, use the model to run initial refinement on every dataset and then subject it to PanDDA analysis. Additionally, there is a possibility to upload the complete PanDDA analysis into the ZENODO data repository and point to it in the PDB deposition.</p></div>
+<p>&nbsp;</p>
+<p>We have recently made our first apo deposition (G_1002058) and are still sorting out a few technicalities. Once this is done, I’m planning to make a few changes to the XCE gui, so that users get a simple step-by-step description what they need to do. Also, I am currently working on a publication which we will hopefully submit early next year and which will provide more details.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/update-on-batch-deposition-of-xchem-structures/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How high throughput fragment screening is reviving old school crystallography tricks</title>
+		<link>https://thesgc.github.io/static-openlabnotebooks/how-high-throughput-fragment-screening-is-reviving-old-school-crystallography-tricks/</link>
+		<comments>https://thesgc.github.io/static-openlabnotebooks/how-high-throughput-fragment-screening-is-reviving-old-school-crystallography-tricks/#respond</comments>
+		<pubDate>Fri, 12 Oct 2018 09:04:49 +0000</pubDate>
+		<dc:creator><![CDATA[Jose Brandao-Neto]]></dc:creator>
+				<category><![CDATA[Diamond Light Source]]></category>
+		<category><![CDATA[Jose Brandao-Neto]]></category>
+		<category><![CDATA[XChem]]></category>
+
+		<guid isPermaLink="false">https://thesgc.github.io/static-openlabnotebooks/?p=1995</guid>
+		<description><![CDATA[Takeaway: Why: we need lots of well diffracting crystals. How: crystallisation growth optimisation. What: tweaking conditions, phase space understanding, seeding, MMS. At this day and age (2018) many people are thinking that the future of structural molecular biology being about serial XFEL or synchrotron crystallography and electron diffraction, which are great tools to harness the <a class="more-link" href="https://thesgc.github.io/static-openlabnotebooks/how-high-throughput-fragment-screening-is-reviving-old-school-crystallography-tricks/">Read More ...</a>]]></description>
+				<content:encoded><![CDATA[<p><strong>Takeaway</strong>:<br />
+<strong>Why</strong>: we need lots of well diffracting crystals.<br />
+<strong>How</strong>: crystallisation growth optimisation.<br />
+<strong>What</strong>: tweaking conditions, phase space understanding, seeding, MMS.</p>
+<div id="attachment_2005" style="width: 310px" class="wp-caption alignnone"><img class="size-medium wp-image-2005" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/10/Screenshot-rdesktop-diamvi04-1-soft.diamond.ac_.uk_-300x181.png" alt="Crystals seen on TeXrank" width="300" height="181" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/10/Screenshot-rdesktop-diamvi04-1-soft.diamond.ac_.uk_-300x181.png 300w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/10/Screenshot-rdesktop-diamvi04-1-soft.diamond.ac_.uk_-768x464.png 768w, https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/10/Screenshot-rdesktop-diamvi04-1-soft.diamond.ac_.uk_-1024x619.png 1024w" sizes="(max-width: 300px) 100vw, 300px" /><p class="wp-caption-text">Crystals as seen on TeXrank</p></div>
+<p>At this day and age (2018) many people are thinking that the future of structural molecular biology being about serial XFEL or synchrotron crystallography and electron diffraction, which are great tools to harness the power of single crystal diffraction from tiny (&lt;1um) crystal samples, which embody the stereotype of what difficult scientific cases represent in practice, such as membrane proteins or large molecular assemblies.</p>
+<p>Globular proteins are deemed to broadly be amenable to crystallography and have consistently underpinned the structural molecular arm of current drug discovery, to the point that they are the core of fragment-based structure-led drug and tool compound discovery.</p>
+<p>In streamlining the fragment-based discovery process, the DLS-SGC XChem project at idyllic Didcot in Oxfordshire, England, UK &#8211; near the area where Winnie the Pooh and Christopher Robin stories took place &#8211; has recently reached the 80,000th fragment soaked crystal after half a hundred molecular targets were screened through it since 2016 from a wide range of diseases and biological work.</p>
+<p>One key feature of the process is that research undergoing a fragment screen by macromolecular crystallography needs to have hundreds of very similar samples both in shape and diffractive properties reformatted in particular plate formats and unlike common prejudice, no one had systematically attempted to do that previously and the fragment screening process becomes a new learning iteration in the research process: researchers come out of the exercise much more aware of the properties of their crystal systems.</p>
+<p>What usually happens is that it&#8217;s necessary to further optimise the crystallisation conditions using the same tools and techniques that people used 20 years ago to grow bigger crystals, now this time focussing on not on growing bigger crystals but on growing many and reproducible crystals.</p>
+<p>The toolkit is well established and mapping the crystallisation phase space and tweaking crystallisation conditions with instructions found at suppliers [<a href="https://www.douglas.co.uk/rep1.htm">Douglas Instruments</a>, <a href="https://www.jenabioscience.com/images/0f4b2c43de/CS-401EN.pdf">Jena Bioscience</a>], coupled with the more recent multiple matrix seeding technique [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4157405/">D&#8217;Arcy et al 2014</a>] will yield reliable results in most cases.</p>
+<p>An incidental result from the experience is that the dying art of crystal optimisation is back to the limelight and at least 50 young researchers have now been re-exposed to it in a different light and the knowledge will continue to respread as alongside cryogenic fragment screening approaches, room temperature plate screening, serial crystallography and electron diffraction will keep requiring crystallisation optimisation to improve sample preparation.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://thesgc.github.io/static-openlabnotebooks/how-high-throughput-fragment-screening-is-reviving-old-school-crystallography-tricks/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

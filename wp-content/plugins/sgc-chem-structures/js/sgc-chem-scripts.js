@@ -31,7 +31,8 @@ jQuery( document ).ready(function() {
 	
 	
 	
-	jQuery("#search-ok").on("click", function() {
+	jQuery("#search-ok").on("click", function(e) {
+		
 		//Get hold of the Ketcher element
 		var ketcher = null;
 		
@@ -141,9 +142,25 @@ jQuery( document ).ready(function() {
 	jQuery('#select-type').change(function(){
 		if(jQuery(this).val() == 'similarity'){
 			jQuery('#threshold').val('').prop( "disabled", false);
+			jQuery('#threshold').val(0.6);
 		}
 		else {
 			jQuery('#threshold').val('').prop( "disabled", true);
+			jQuery('#search-error').hide();
+			jQuery('#search-ok').show();
+		}
+	});
+	
+	
+	// Validate threshold
+	jQuery("#threshold" ).keyup(function() {
+		if(jQuery('#threshold').val()>0 && jQuery('#threshold').val()<=1) {
+			jQuery('#search-error').hide();
+			jQuery('#search-ok').show();
+		}
+		else{
+			jQuery('#search-ok').hide();
+			jQuery('#search-error').show();
 		}
 	});
 

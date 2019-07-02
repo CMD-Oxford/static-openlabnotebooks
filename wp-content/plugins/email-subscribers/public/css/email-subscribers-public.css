@@ -8,3 +8,4 @@
 .es_subscription_message.error {color: #f00;font-size: 16px;}
 .es_spinner_image {display: none;float: right;}
 .es-field-wrap {margin-bottom: .6em;}
+.ig-es-form-list-selection, .ig-es-form-list-selection td, .ig-es-form-list-selection tr {border: none;}
