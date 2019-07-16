@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="2nd July 2019 8:31 am" -->
+<!-- generated-on="16th July 2019 3:15 pm" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-misc.xml</loc>
-		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
+		<lastmod>2019-07-16T04:01:32+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-tax-category.xml</loc>
-		<lastmod>2019-07-01T16:49:26+00:00</lastmod>
+		<lastmod>2019-07-16T04:01:32+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-07.xml</loc>
+		<lastmod>2019-07-16T04:01:32+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2019-06.xml</loc>
@@ -128,4 +132,4 @@
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-01.xml</loc>
 		<lastmod>2018-07-12T10:28:58+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: b8c2c6d92f73baabcd1c10e73e144ac6; Queries for sitemap: 6; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 34.25MB -->
+</sitemapindex><!-- Request ID: 3bc642d8619973ccbef37fab3fdd4fca; Queries for sitemap: 6; Total queries: 20; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4.25MB -->

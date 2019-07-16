@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /wp-admin/
 Disallow: /people/
 Disallow: /active-people/
 Disallow: /past-people/
@@ -13,6 +12,7 @@ Disallow: /laboratories/
 Disallow: /active-laboratories/
 Disallow: /past-laboratories/
 
+Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
 sitemap: https://thesgc.github.io/static-openlabnotebooks/sitemap.xml
