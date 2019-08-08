@@ -111,7 +111,6 @@
 	}
 
 	$(document).ready(function () {
-
 		// var submitButton = $('.es_subscription_form_submit');
 
 		$(document).on('submit', '.es_subscription_form', function (e) {
@@ -120,19 +119,19 @@
 			handleBindFunction(form);
 		});
 
-
-		// Compatibility of ES with IG
-		jQuery( window ).on( "init.icegram", function(e, ig) {
-			if(typeof ig !== 'undefined' && typeof ig.messages !== 'undefined' ) {
-				jQuery('.icegram .es_shortcode_form, .icegram form[data-source="ig-es"]').each(function(i, v){
-					jQuery(v).bind('submit', function (e) {
-						e.preventDefault();
-						var form = $(this);
-						handleBindFunction(form, true);
-					});
+	});
+	// Compatibility of ES with IG
+	jQuery( window ).on( "init.icegram", function(e, ig) {
+		if(typeof ig !== 'undefined' && typeof ig.messages !== 'undefined' ) {
+			jQuery('.icegram .es_shortcode_form, .icegram form[data-source="ig-es"]').each(function(i, v){
+				jQuery(v).bind('submit', function (e) {
+					e.preventDefault();
+					var form = $(this);
+					handleBindFunction(form, true);
 				});
-			}
-		});
-
+			});
+		}
 	});
 })(jQuery);
+
+
