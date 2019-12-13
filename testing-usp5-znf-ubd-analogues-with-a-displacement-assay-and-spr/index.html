@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"><title>Testing USP5 ZnF-UBD analogues with a Displacement Assay and SPR – openlabnotebooks.org</title><link rel="dns-prefetch" href="//www.google.com"><link rel="dns-prefetch" href="//ajax.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="pt-cv-public-style-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css" type="text/css" media="all"><link rel="stylesheet" id="contact-form-7-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all"><link rel="stylesheet" id="email-subscribers-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css" type="text/css" media="all"><link rel="stylesheet" id="custom-css-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/sgc-chem-structures/css/sgc-chem-style.css" type="text/css" media="all"><link rel="stylesheet" id="less-style-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/wp-less/clean-journal-pro-child/less/custom-d172b5dce3.css" type="text/css" media="all"><link rel="stylesheet" id="cookie-consent-style-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/uk-cookie-consent/assets/css/style.css" type="text/css" media="all"><link rel="stylesheet" id="clean-journal-pro-style-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/style.css" type="text/css" media="all"><link rel="stylesheet" id="child-style-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/style.css" type="text/css" media="all"><link rel="stylesheet" id="jquery-ui-css-css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css?ver=1.12.1" type="text/css" media=""><link rel="stylesheet" id="clean-journal-web-font-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,regular,italic,600,600italic%7cMontserrat:300,300italic,regular,italic,600,600italic%7cMerriweather:300,300italic,regular,italic,600,600italic&subset=latin" type="text/css" media="all"><link rel="stylesheet" id="clean-journal-style-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/style.css" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/css/genericons/genericons.css" type="text/css" media="all"><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-includes/js/jquery/jquery-migrate.min.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/thesgc.github.io\/static-openlabnotebooks\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/email-subscribers/lite/public/js/email-subscribers-public.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/sgc-chem-structures/js/sgc-chem-scripts.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js?ver=1.12.1"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro-child/js/scripts.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/js/jquery.sidr.min.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/js/clean-journal-custom-scripts.min.js"></script><script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-110085046-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script><style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #ddd;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #464646;
+				}
+				#catapult-cookie-bar a {
+					color: #fff;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: ;
+				}
+				button#catapultCookie {
+					background:;
+					color: ;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #ddd;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/01/cropped-lab-jar02-32x32.png" sizes="32x32"><link rel="icon" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/01/cropped-lab-jar02-192x192.png" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/01/cropped-lab-jar02-180x180.png"><meta name="msapplication-TileImage" content="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/01/cropped-lab-jar02-270x270.png"><style type="text/css" media="screen">
+#site-generator { background-color: #f5f5f5; color: #404040; }
+#site-generator a { color: #1b8be0; }
+body, button, input, select, textarea { font-family: "Source Sans Pro", sans-serif; }
+</style></head><body class="post-template-default single single-post postid-3784 single-format-standard wp-custom-logo category-13 group-blog two-columns content-left excerpt-image-left mobile-menu-one">
+	<div id="myModal" class="modal">
+
+		<div class="modal-content">
+			<span class="title"><h2>Structure search</h2></span>
+			<span class="close">×</span>
+			<iframe src="" id="ketcher-frame"></iframe>
+			
+			<div class="search-options">
+				<a id="search-ok">SEARCH</a>
+				<a id="search-error">SEARCH</a>
+				
+				<div class="search-option">
+					<label for="threshold">Similarity threshold:</label>
+					<input type="number" id="threshold" step="0.1" min="0.1" max="1" disabled></div>
+				<div class="search-option">
+					<label for="select-type">Search type:</label>
+						<select id="select-type"><option value="substructure">Substructure</option><option value="similarity">Similarity</option></select></div>
+			
+			</div>
+			<div id="search-results">
+				<span id="loading"></span>
+			</div>
+		</div>
+
+	</div>
+			<div id="page" class="hfeed site">
+		    <div id="header-top" class="header-top-bar">
+        <div class="wrapper">
+                            <div class="header-top-right">
+                    <section class="widget widget_clean_journal_social_icons" id="header-right-social-icons"><div class="widget-wrap">
+                            <a class="genericon_parent genericon genericon-twitter" target="_blank" title="Twitter" href="https://twitter.com/SGClabNotebooks"><span class="screen-reader-text">Twitter</span> </a><a id="custom-icon-1" class="custom-icon" target="_blank" title="Subscribe" href="/subscription-form">
+					<img alt="Subscribe" class="icon-static" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/02/mail-icon.png"></a><a id="custom-icon-2" class="custom-icon" target="_blank" title="Download" href="https://thesgc.github.io/static-openlabnotebooks/custom-code/">
+					<img alt="Download" class="icon-static" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/08/downwards-arrow.png"></a>                        </div>
+                    </section></div>
+                    </div>
+    </div>
+
+		<header id="masthead" role="banner"><div class="wrapper">
+		
+    <div id="mobile-header-left-menu" class="mobile-menu-anchor primary-menu">
+        <a href="#mobile-header-left-nav" id="header-left-menu" class="genericon genericon-menu">
+            <span class="mobile-menu-text">Menu</span>
+        </a>
+    </div>
+
+    <div id="site-branding" class="logo-left">
+				<div id="site-logo"><a href="https://thesgc.github.io/static-openlabnotebooks/" class="custom-logo-link" rel="home" itemprop="url"><img width="99" height="120" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2018/04/cropped-SGC_logo.png" class="custom-logo" alt="openlabnotebooks.org" itemprop="logo"></a></div><div id="site-header"><p class="site-title"><a href="https://thesgc.github.io/static-openlabnotebooks/">openlabnotebooks.org</a></p><p class="site-description">A growing team of groundbreaking scientists around the world are now sharing their lab notebooks online</p>
+		</div></div>
+
+<aside class="sidebar sidebar-header-right widget-area"><section class="widget widget_search" id="header-right-search"><div class="widget-wrap">
+				
+<form role="search" method="get" class="search-form" action="https://thesgc.github.io/static-openlabnotebooks/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for:"></label>
+	<input type="submit" class="search-submit" value="Search"></form>
+			</div>
+		</section></aside><a class="sub-search">STRUCTURE SEARCH</a>	
+				</div>
+		</header><nav class="nav-primary search-enabled" role="navigation"><div class="wrapper">
+                <h3 class="assistive-text">Primary Menu</h3>
+                <div class="screen-reader-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+                <ul id="menu-main-navigation" class="menu clean-journal-nav-menu"><li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-27"><a href="https://thesgc.github.io/static-openlabnotebooks">Home</a></li>
+<li id="menu-item-3061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3061"><a href="https://thesgc.github.io/static-openlabnotebooks/laboratories/">Laboratories</a>
+<ul class="sub-menu"><li id="menu-item-3060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3060"><a href="https://thesgc.github.io/static-openlabnotebooks/active-laboratories/">Active</a>
+	<ul class="sub-menu"><li id="menu-item-3373" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3373"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/amy-ramsey-univ-of-toronto/">Amy Ramsey (Univ. of Toronto)</a></li>
+		<li id="menu-item-3067" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3067"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/diamond-light-source/">Diamond Light Source</a></li>
+		<li id="menu-item-3068" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3068"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/michael-taylor-sickkids/">Michael Taylor (SickKids Hospital Toronto)</a></li>
+		<li id="menu-item-3069" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3069"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/montreal-neurological-institute/">Montreal Neurological Institute</a></li>
+		<li id="menu-item-3071" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3071"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/pietro-roversi-leic/">Pietro Roversi (Univ. of Leicester)</a></li>
+		<li id="menu-item-3072" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3072"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/ray-truant-mcmaster/">Ray Truant (McMaster Univ.)</a></li>
+		<li id="menu-item-3073" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3073"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-unc/">SGC UNC Chapel Hill</a></li>
+		<li id="menu-item-3074" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3074"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-oxford/">SGC Univ. of Oxford</a></li>
+		<li id="menu-item-3075" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3075"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-toronto/">SGC Univ. of Toronto</a></li>
+	</ul></li>
+	<li id="menu-item-3059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3059"><a href="https://thesgc.github.io/static-openlabnotebooks/past-laboratories/">Past</a>
+	<ul class="sub-menu"><li id="menu-item-3076" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3076"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/antoine-claessens-laboratories/">Antoine Claessens</a></li>
+		<li id="menu-item-3077" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3077"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/unc-catalyst/">Catalyst UNC Chapel Hill</a></li>
+		<li id="menu-item-3078" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3078"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-karolinska/">SGC Karolinska</a></li>
+	</ul></li>
+</ul></li>
+<li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-115"><a href="https://thesgc.github.io/static-openlabnotebooks/people/">People</a>
+<ul class="sub-menu"><li id="menu-item-2962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2962"><a href="https://thesgc.github.io/static-openlabnotebooks/active-people/">Active</a>
+	<ul class="sub-menu"><li id="menu-item-123" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-123"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/alfredo-picado/">Alfredo Picado</a></li>
+		<li id="menu-item-3372" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3372"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/amy-ramsey/">Amy Ramsey</a></li>
+		<li id="menu-item-3651" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3651"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ashley-hutchinson/">Ashley Hutchinson</a></li>
+		<li id="menu-item-1118" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1118"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ben-eduful/">Ben Eduful</a></li>
+		<li id="menu-item-3346" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3346"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/carmen-jimenez-antunez/">Carmen Jimenez Antunez</a></li>
+		<li id="menu-item-3102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3102"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/claudia-alvarez/">Claudia Alvarez</a></li>
+		<li id="menu-item-257" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-257"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/david-dilworth/">David Dilworth</a></li>
+		<li id="menu-item-1050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1050"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ellie-williams/">Ellie Williams</a></li>
+		<li id="menu-item-2681" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2681"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/haresh-ajani/">Haresh Ajani</a></li>
+		<li id="menu-item-2902" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2902"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jacob-mcauley/">Jacob McAuley</a></li>
+		<li id="menu-item-176" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-176"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jong-fu-wong/">Jong Fu Wong</a></li>
+		<li id="menu-item-1993" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1993"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jose-brandao-neto/">Jose Brandao-Neto</a></li>
+		<li id="menu-item-3414" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3414"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/katheron-intson/">Katheron Intson</a></li>
+		<li id="menu-item-177" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-177"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/liz-brown/">Liz Brown</a></li>
+		<li id="menu-item-2124" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2124"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/louisa-temme/">Louisa Temme</a></li>
+		<li id="menu-item-2790" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2790"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/magdalena-szewczyk/">Magdalena Szewczyk</a></li>
+		<li id="menu-item-135" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-135"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/mandeep-mann/">Mandeep Mann</a></li>
+		<li id="menu-item-2203" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2203"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/opher-gileadi/">Opher Gileadi</a></li>
+		<li id="menu-item-1700" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1700"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/pietro-roversi/">Pietro Roversi</a></li>
+		<li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"><a target="_blank" href="http://labscribbles.com/">Rachel Harding</a></li>
+		<li id="menu-item-1772" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1772"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/sabrina-mackinnon/">Sabrina Mackinnon</a></li>
+		<li id="menu-item-2867" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2867"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/serap-beldar/">Serap Beldar</a></li>
+		<li id="menu-item-3761" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3761"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/setayesh-yazdani/">Setayesh Yazdani</a></li>
+		<li id="menu-item-2956" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2956"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/stephen-armstrong/">Stephen R. Armstrong</a></li>
+		<li id="menu-item-2461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a target="_blank" href="https://raytruantlab.ca/real-time-open-reports/">Tamara Maiuri</a></li>
+		<li id="menu-item-3770" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3770"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/tatiana-lipina/">Tatiana Lipina</a></li>
+		<li id="menu-item-2447" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2447"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/thomas-durcan/">Thomas M. Durcan</a></li>
+		<li id="menu-item-2311" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2311"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/tobias-krojer/">Tobias Krojer</a></li>
+		<li id="menu-item-2882" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2882"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/victoria-vu/">Victoria Vu</a></li>
+		<li id="menu-item-3415" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3415"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/yuanye-yan/">Yuanye Yan</a></li>
+	</ul></li>
+	<li id="menu-item-2961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2961"><a href="https://thesgc.github.io/static-openlabnotebooks/past-people/">Past</a>
+	<ul class="sub-menu"><li id="menu-item-1162" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1162"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/antoine-claessens/">Antoine Claessens</a></li>
+		<li id="menu-item-2963" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2963"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/carla-alamillo/">Carla Alamillo</a></li>
+		<li id="menu-item-2029" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2029"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/carolyn-marks/">Carolyn Marks</a></li>
+		<li id="menu-item-308" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-308"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/genna-luciani/">Genna Luciani</a></li>
+		<li id="menu-item-2968" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2968"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/jolene-ho/">Jolene Ho</a></li>
+		<li id="menu-item-2964" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2964"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/kaleb-naegeli/">Kaleb Naegeli</a></li>
+		<li id="menu-item-2965" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2965"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/megha-abbey/">Megha Abbey</a></li>
+		<li id="menu-item-2966" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2966"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/nirav-kapadia/">Nirav Kapadia</a></li>
+		<li id="menu-item-376" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-376"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/roslin-adamson/">Roslin Adamson</a></li>
+		<li id="menu-item-1972" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1972"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/sean-obyrne/">Sean O’Byrne</a></li>
+		<li id="menu-item-2967" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2967"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/wen-yih-aw/">Wen Yih Aw</a></li>
+	</ul></li>
+</ul></li>
+<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-118"><a href="https://thesgc.github.io/static-openlabnotebooks/disease-foundations/">Diseases</a>
+<ul class="sub-menu"><li id="menu-item-1761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1761"><a href="https://thesgc.github.io/static-openlabnotebooks/active-diseases/">Active</a>
+	<ul class="sub-menu"><li id="menu-item-1855" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1855"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/alzheimers-disease/">Alzheimer’s disease</a></li>
+		<li id="menu-item-2026" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2026"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/amyotrophic-lateral-sclerosis-als/">Amyotrophic Lateral Sclerosis (ALS)</a></li>
+		<li id="menu-item-1140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1140"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/chordoma/">Chordoma</a></li>
+		<li id="menu-item-144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-144"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dipg/">Diffuse intrinsic pontine glioma</a></li>
+		<li id="menu-item-3759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3759"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/ependymoma/">Ependymoma</a></li>
+		<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/fop/">Fibrodysplasia ossificans progressiva</a></li>
+		<li id="menu-item-3374" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3374"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/grin-disorder/">GRIN disorder</a></li>
+		<li id="menu-item-600" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-600"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/chdi/">Huntington’s disease</a></li>
+		<li id="menu-item-2504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2504"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/ipsc-disease-modelling/">iPSC Disease modelling</a></li>
+		<li id="menu-item-255" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-255"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/leukemia/">Leukemia</a></li>
+		<li id="menu-item-1144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1144"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/malaria/">Malaria</a></li>
+		<li id="menu-item-2449" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2449"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/parkinsons-disease-and-neurodevelopmental-disorders/">Parkinson’s disease and neurodevelopmental disorders</a></li>
+		<li id="menu-item-1774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1774"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/primary-hyperoxaluria/">Primary Hyperoxaluria</a></li>
+		<li id="menu-item-1702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1702"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/rare-disease/">Rare disease</a></li>
+	</ul></li>
+	<li id="menu-item-1760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1760"><a href="https://thesgc.github.io/static-openlabnotebooks/past-diseases/">Past</a>
+	<ul class="sub-menu"><li id="menu-item-1873" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1873"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dravet-syndrome/">Dravet syndrome</a></li>
+	</ul></li>
+</ul></li>
+<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-155"><a href="https://thesgc.github.io/static-openlabnotebooks/projects/">Projects</a>
+<ul class="sub-menu"><li id="menu-item-1759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1759"><a href="https://thesgc.github.io/static-openlabnotebooks/active-projects/">Active</a>
+	<ul class="sub-menu"><li id="menu-item-356" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-356"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/acvr1-alk2/">ACVR1/ALK2</a></li>
+		<li id="menu-item-2027" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2027"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/als-reproducible-antibody-platform-als-rap/">ALS-Reproducible Antibody Platform (ALS-RAP)</a></li>
+		<li id="menu-item-2883" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2883"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/e3-ligases/">E3 ligases</a></li>
+		<li id="menu-item-2771" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2771"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/epigenetic-targets-in-medulloblastoma/">Epigenetic targets in Medulloblastoma</a></li>
+		<li id="menu-item-3760" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3760"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/ezhip/">EZHIP</a></li>
+		<li id="menu-item-1856" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1856"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/gtpase-gef-complex/">GTPase-GEF complex</a></li>
+		<li id="menu-item-1773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1773"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hao1/">HAO1</a></li>
+		<li id="menu-item-451" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-451"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hdacs/">HDACs</a></li>
+		<li id="menu-item-3295" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3295"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hero-glove/">HERO Glove</a></li>
+		<li id="menu-item-601" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-601"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/huntingtin/">Huntingtin</a></li>
+		<li id="menu-item-2682" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2682"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/in-silico-protacs-design/">In silico PROTACs design</a></li>
+		<li id="menu-item-2503" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2503"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/ipscs/">iPSCs</a></li>
+		<li id="menu-item-3375" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3375"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/nmda/">NMDA</a></li>
+		<li id="menu-item-357" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-357"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/nsd3/">NSD3</a></li>
+		<li id="menu-item-1703" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1703"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/open-secretion-rescue/">Open Secretion Rescue</a></li>
+		<li id="menu-item-504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-504"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/prc2/">PRC2</a></li>
+		<li id="menu-item-3847" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3847"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/prmts/">PRMTs</a></li>
+		<li id="menu-item-2868" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2868"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/setdb1/">SETDB1</a></li>
+		<li id="menu-item-3184" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3184"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/investigating-outdoor-mobility-of-older-adults/">Investigating Outdoor Mobility of Older Adults</a></li>
+		<li id="menu-item-254" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-254"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/understudied-kinases/">Understudied Kinases</a></li>
+		<li id="menu-item-157" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-157"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/usp5/">USP5</a></li>
+		<li id="menu-item-3652" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3652"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/wdr41/">WDR41</a></li>
+		<li id="menu-item-1960" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1960"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/xchem/">XChem</a></li>
+	</ul></li>
+	<li id="menu-item-1758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1758"><a href="https://thesgc.github.io/static-openlabnotebooks/past-projects/">Past</a>
+	<ul class="sub-menu"><li id="menu-item-1141" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1141"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/egfr-and-gak/">EGFR and GAK</a></li>
+		<li id="menu-item-1874" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1874"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/gene-therapy-for-dravet-syndrome/">Gene therapy for Dravet Syndrome</a></li>
+	</ul></li>
+</ul></li>
+<li id="menu-item-923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-923"><a href="https://thesgc.github.io/static-openlabnotebooks/the-team/">The team</a></li>
+<li id="menu-item-919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-919"><a href="https://thesgc.github.io/static-openlabnotebooks/about/">About</a></li>
+</ul><div id="search-toggle" class="genericon">
+                            <a class="screen-reader-text" href="#search-container">Search</a>
+                        </div>
+
+                        <div id="search-container" class="displaynone">
+                            
+<form role="search" method="get" class="search-form" action="https://thesgc.github.io/static-openlabnotebooks/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for:"></label>
+	<input type="submit" class="search-submit" value="Search"></form>
+                        </div>
+                                	</div>
+        </nav><div id="content" class="site-content">
+			<div class="wrapper">
+	
+	<main id="main" class="site-main" role="main"><article id="post-3784" class="post-3784 post type-post status-publish format-standard hentry category-mandeep-mann category-sgc-toronto category-usp5"><div class="entry-container">
+		<header class="entry-header"><h1 class="entry-title">Testing USP5 ZnF-UBD analogues with a Displacement Assay and SPR</h1>
+
+			<p class="entry-meta"><span class="posted-on"><span class="screen-reader-text">Posted on</span><a href="https://thesgc.github.io/static-openlabnotebooks/testing-usp5-znf-ubd-analogues-with-a-displacement-assay-and-spr/" rel="bookmark"><time class="entry-date published updated" datetime="2019-11-15T16:49:40+00:00">15th November 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author</span><a class="url fn n" href="">Mandeep Mann</a></span></span><span class="comments-link"><a href="https://thesgc.github.io/static-openlabnotebooks/testing-usp5-znf-ubd-analogues-with-a-displacement-assay-and-spr/#respond">Leave a comment</a></span></p>		</header><div class="entry-content">
+			<p>If you’ve been following along my open notebook journey over the last two years, you’ll be excited to hear I’ve published my work on the first antagonists of USP5 ZnF-UBD in a peer-reviewed journal. Check it out <a href="https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.9b00988">here</a>!</p>
+<p>In a <a href="https://thesgc.github.io/static-openlabnotebooks/prioritizing-commercial-analogues-of-previous-usp5-znf-ubd-hits/">previous post</a>, I outlined my selection of the next set of analogues in my chemical series against USP5 ZnF-UBD to continue to understand the structure activity relationship and to improve potency. I used a <a href="https://thesgc.github.io/static-openlabnotebooks/growth-and-purification-of-biotinylated-usp5-constructs-testing-znf-ubd-ligands-in-a-displacement-assay/">displacement assay</a>, which I described a few weeks ago to screen 20 commercial compounds that I had selected by <a href="https://thesgc.github.io/static-openlabnotebooks/prioritizing-commercial-analogues-of-previous-usp5-znf-ubd-hits/">virtual screening</a>. The best displacing compounds were then tested using a surface plasmon resonance (SPR) assay. You can see details on <a href="https://zenodo.org/record/3543630#.Xc7VHFdKjIU"><strong>Zenodo</strong></a>.</p>
+<p>The displacement assay results are summarized in Figure 1. Compound displacement comparable to the control compound 21, a compound that has a K<sub>D</sub> of approximately 60 µM, were selected to be tested by SPR to determine binding affinities.</p>
+<p><img src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115a-300x138.png" alt="" width="504" height="232" class="wp-image-3785 aligncenter" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115a-300x138.png 300w,https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115a-768x354.png 768w,https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115a.png 824w" sizes="(max-width: 504px) 100vw, 504px"></p>
+<p style="text-align: center;"><strong>Figure 1</strong>. Summary of displacement screen</p>
+<p>One of the most promising compounds, UBTR012574a has a K<sub>D</sub> of approximately 10 µM, a significant increase in potency from the parent molecules (Figure 2).</p>
+<p><img src="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115b-300x78.png" alt="" width="554" height="144" class="wp-image-3786 aligncenter" srcset="https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115b-300x78.png 300w,https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115b-768x200.png 768w,https://thesgc.github.io/static-openlabnotebooks/wp-content/uploads/2019/11/20191115b.png 930w" sizes="(max-width: 554px) 100vw, 554px"></p>
+<p style="text-align: center;"><strong>Figure 2</strong>. SAR of chemical series</p>
+<p>In the next couple of weeks, I will try to solve the co-crystal structure of USP5 ZnF-UBD in complex with UBTR012574a to determine if the predicted binding pose is similar to the experimental binding pose. This will give us some insight into what chemical moieties of the compound are lending to the increased potency. I am also going back to Enamine’s REAL database and looking for compounds similar to UBTR012574a. I’ll be ordering some more analogues to get a better understanding of the structure activity relationship of the extended sulfonamide groups at the para position of the benzene ring. Stay tuned!</p>
+<table data-upload-id="file_upload:c78ea65a-c105-4828-83d8-8a810d540c79"><thead><tr><th>Structure Image</th>
+<th>Smiles</th>
+<th>Mol. Weight</th>
+</tr></thead><tbody><tr><td><img src="data:image/png;base64,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SMPsN1kNyAGgtrYWXl5eOHDgALRardThABDK844fB0aObPoY2fVIlUqFwYMHy+byrqwUtjl67bXm6x1l867dELk8cO7eFRJTy8uBPXsAV9emj5VdjwTk8cB5kHOkVLYu50iWQmq1Wkn39Dl9GnjuOWE+Miurldsc2Wfivm3o9Xr6+/vztddeY25url1979tHenmRiYmtShypR5ZCLl68mD4+Phw1ahRdXFzYp0+fZnOFxCIj4xxVKnLRorafKzshc3NzqVQqmZmZSVJIsUtLS2N0dDRVKhW7du1av8mxmPtHLl++nCqViv/5z8V2nS8rISsqKti/f3++8847Fr9vuHN0586dRdk52mQy1eccbd26td2xy0rIqVOncvDgwc3uGP2AhjtHe3p6skuXLoyPj+eGDRtYWVnZKn8Gg4EzZ86kt7e31TlHshHyu+++o7u7O882yLQvLi62mCv0KPfv32dmZiZff/11du/enWq1uj4tpryJooHKykpGRUWxd+/eZj7biyyEvHjxIj09Pbl27Voze2JiIjt37swpU6YwPT29VZkYDXeO9vPzM9s5+sEG86WlpQwNDWVQUBCvXbvWQoutQ3Ih6+rqqNVqGRcX1+i7prbTTk1NZUkr0q8NBgP37t3LxMREBgQEUKVSMTIykn379mV4eLioW3JLLuS7777LJ598slEC/KNYu5220Wjk4cOHOW7cOD777LOtug+3BUmF3LFjB5VKZX3ac1t4UK3Vv39/M1FbKoH7+uuvOWzYsPaG3CSSCVlcXEw/Pz8uas/o9xGaKoErKChodGyHEtJkMjEqKorh4eE0GAyitn369GnOnz+fwcHBVCgUHDFiBH/88cf6720lpCTTaMuWLcPRo0eRl5cn+t+0CQoKQlBQED766CMUFBRg06ZN8LDH/m6i/zQtcOzYMapUKm7evNnerknarkfadRqtsrISU6dOxRtvvIEJEybY07XNsauQb775JlxdXbF48WJ7urULdrtHbtiwATqdDseOHUOnTp3s5bYR/fqpERsbKH7Dot8sLPDgFXDNmjX2cNcsJSVf88wZB7xH6vV6TJs2DWPHjsXMmTPr7fkNk7M7AC4A8Omnn+LUqVM2cXDnzh1cu3YN27dvr7dVVFQgPDwcCxcuxKxZs2zi1964AIC3tzf8/Pxs4qCurg51dXWoqampt3l4eGDVqlWIj49HaGgogoODbeLbroh+s3gEo9HIMWPGcNSoUY3WWxISEhgUFNSqOUexcNh7pJOTE9atW4ezZ8/is88+M/vuyy+/hNFoRHJysq3DsD2i/zRNkJWVRaVSySNHjpjZT548STc3N6anp9slDlv1SLu+Ir711lsMDAxs9IcjP//8c3p7e/PKlSs2j8FWQto1G622thYhISF46qmnkJ6e3vCqwIQJE1BWVobs7Gyb/nFevf4W9PpbUKuHi9uw6D9NC1y4cIEeHh78/vvvzewlJSX09/fn/Ed3vXIQJJmPXLNmDTt37txox4Ds7Gy6uroyOztbirCsQrIZ8ldffZXDhg1rtLD/3nvvsWfPniwtLRXdp8lUw0uX/ocFBZE8f/4F/v67eK+skglZVlbGvn37cu7cuWZ2vV7PkJAQxsTEiO6ztHQdb95Mqf9sNIpXaC/p4tfRo0epVCobbU9z6dIlenp6MjU1VVR/9+7peP78aN6/L/4mJJIvx37yySfs3r17oyXV9PR0urm5MS8vT0RvRhYVLWF+fjBPnQpkefl+0VqWXEij0cjRo0fzpZdearRn2vTp0616hTQYyllaup537vy70XeVlb8wP39Iu9q1hORCkuSNGzfYtWtXLlu2zMz+IDvt7bffbnVbBsNd3rnzHQsKXuGJE27My/PjrVsfkyTr6m7QZKr9779v8cyZZ0T7P8imPCQrKwuTJk3CwYMHzcpC8vLy4OLigqCgoCbPNRhK8ccfP+Levf9DefkuuLr6okuXSfDyegUeHqOgUAgLAeXlu1FUtABOTmqYTNUICJgPD48XRIlfNkICwOzZs7F9+3acOHECnp6ezR578+ZNZGRkICRkFxSKLCiVfeDtHYsuXWLh7j4CgMI+QT9AtL4tAjU1NRw6dCinT59u8fvCwkIuW7aMoaGhdHJy4sCBA7l//2esqvrVrnFaQlZCksJmwWq1muvWrSNJXr58mcuXL2dYWBgVCgUHDhzIlJQU5ufnSxypObITkiRXr15NDw8PBgUFUaFQUKvVcsmSJbx06ZLUoTWJLIUsKyujWq3mBx98IFoiqK2RZQnd1q1b4e3tjUWLFkGhsPNDo53IsvJLp9MhJibGYUQEZFjUWV1djV27diErK0vqUNqE7Hrktm3boFarERYWJnUobUJ2Qup0OsTGxsLFRXYXS7PISsiamhps374dsbGxUofSZmQl5M6dO+Hs7Izw8HCpQ2kzshJSp9Nh4sSJUCqVUofSZmQjpF6vx7Zt2xzysgZkJOSePXtgMBgwZswYqUNpF7IRUqfTITo6Gm5ublKH0i5kIaTRaERmZqbDXtaATIQ8cOAAqqqq8PLLL0sdSruRhZA6nQ6RkZFwd3eXOpR2I7mQJpMJGRkZDn1ZAzIQMicnB3fv3kVUVJTUoViF5ELqdDqMHTu2xcUuuSOpkCQ7xGUNSLwcm5ubi7CwMNy+fRs+Pj5ShSEKkvZInU6HiIgIhxcRkFjIjnJZAxIKWVdXh7i4uA5Tbvz/lBw2rMRETuQAAAAASUVORK5CYII="></td>
+<td>Cc1sc2ncn(CC(=O)[O-])c(=O)c2c1C</td>
+<td>237.3</td>
+</tr><tr><td><img src="data:image/png;base64,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"></td>
+<td>CC(=O)N1CCN(C(=O)CCC(=O)[O-])CC1</td>
+<td>227.2</td>
+</tr><tr><td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ0AAABGCAYAAADW35Y6AAAOG0lEQVR4nO2deVBUVxbGP7DZRFAIQTMiIAptKDdiaWlUyLggMC7EpbSwgltMRsslMgiplEJpQgIMMbiAS4gGFS01EgyjRktxZwiUoCgQjREzGCJxC2DAVppv/uhpQ3cD3ShvIdO/Kqp45/V95ys4fd959557nwVJwsxzUVhYiOjoaFhYWAjqZ/z48XjnnXfQtWtXQf2IhUJqAR2VyspKBAQE4M0330S/fv0E9bV9+3bcuXMHn376qaB+xMLC3NM9H+Hh4SgvL8fZs2cF7+lOnTqFoKAgFBcXQ6lUCupLDMxB9xxcvHgRw4cPR15eHoYMGSKKz2nTpuHx48c4fPiwKP6ExBx0bYQkRowYAT8/P2zevFk0v+Xl5fD19UVmZiaCg4NF8ysE5pyujezatQtlZWU4dOiQjr20tBQFBQXt5sfKygphYWHPjnv37o2IiAgsW7YMJSUlsLa2bjdfYmPu6drAo0ePoFQqERkZiRUrVuicS09PR2JiYrv5sre3R35+vsn+OxQ0YzIffbSBSqWST548kUxDeno6HR0d+csvv0im4UUx93QmUl4O9O/fiKysSowf7yaZDv4vpxw8eDC2bNkimY4XwRx0JjJtGqBSAf/6l9RKpHl6bk/MQWcCp04BQUFAcTEgl2EyMccJ2xtz0BlBrQaGDAHGjgXkNCFw584dKJVKfPHFF5g+fbrUctqEpdQC5M62bUBlJbB6tdRKdOnRoweioqIQERGBuro6qeW0CXPQtcLDh0BMDPDRR0C3blKrMSQyMhI2Njb47LPPpJbSJsy311aIjgaOHQMuXgQ6dZJaTfMcPHgQ4eHhKCsrg7u7u9RyTMIcdK1w/z5QVQX4+kqtpHUCAwPRo0cP7Ny5U2opJmEOuj8BJSUl8PPzQ05ODkaNGiW1HKOYg+5PwqJFi1BQUID8/HxYWso7VZe3OjMmExcXh1u3bmHXrl1SSzHK/33Q3b4NWFgAu3f/YfP0lEzOc+Ps7IxVq1YhOjoaNTU1Ustplf/7oAMAb28gKUkzENyRWbJkCVxcXJCQkCC1lFYxBx0AV1fNjENGhtRKXgyFQoHk5GQkJSXhhx9+kFpOi3SIB4njx48jPT3dpM86Om5DTY290c/97W9AWJjm9jprFpCZCQQGasbk+vQBbt16QdEi8NVXX6G2thbz5s3TsY8bNw719fXwFDhP8PHxwdtvv42ePXu2qZ3sK4dzcnIwefJkzJ07F3Z2dkY/b28P2Noav26XLrrHrq7A+PFAB8jDAWgKOpcvX47IyEiDc/X19bC1tYWrq6ugGs6ePYucnBycOXOmbQ1Frt9rEw0NDRw4cCAjIyMF81FRQY4cqfn911/JgQNJNzfB3LUbH3zwAfv27UuVSqVj37dvH7t06cKff/5ZcA137tyho6Mj9+/f36Z2sg66lJQUurq68rfffhPMR9OgI8moKLJrV8HctQs3b96kra0tjxw5omOvq6ujp6cnP/nkE9G0fPzxx+zVqxd///13k9vINugePHhAFxcXbtu2TWopsmPq1KkMCQkxsK9Zs4ZeXl6sr68XTYtKpaK3tzfXrl1rchvZBt2yZcs4ePBgNjQ0SC1FVuTk5NDa2prff/+9jv327du0t7dnZmamoP7z8vIMbukHDx6knZ0df/rpJ5OuIcugKy0tpZWVFU+fPi21FFnR0NDAQYMGMSIiwuBcWFgYx4wZI6j/J0+e0N3dnYmJiQbnAgMDOXv2bJOuI8ugCwoK4syZM6WWITtSU1P58ssv8+HDhzr23NxcKhQKXr58WXANGRkZdHBwYGVlpY69pKSEVlZWPHfunNFryC7ovvnmG9rZ2bG8vFxqKSwvJ7/7TmoVGrQ57tatW3XsarWaw4YN4+LFi0XR0djYyNGjR3PBggUG5xYtWsTXXnuNarW61WvIKuhUKhV9fHwYExMjtRSSZEwM6eND6qUwkrB8+fJmc9zt27fTycmJd+/eFU1LYWEhFQoF8/Pzdez379/nSy+9xB07drTaXlZBl5iYyJ49e/LRo0dSSyFJ1tWR7u7kP/8prY6ysrJmc9yamhq+8sorXL9+veia5s+fzxEjRrCxsVHHnpyczO7du7O6urrFtrIJuqqqKnbt2pUZGRlSS9Fh927SwYGUckF9cHAwZ8yYYWCPjo7mq6++KsmOA9r/1969e3XsT58+Zf/+/fn++++32FY2QbdgwYJmvzlS09hIjhpFLlwojf/s7Gza2toa5Lg//vgjbWxsePToUWmEkYyPj6ebm5vBnenEiRO0trbm9evXm20ni6DT5gjfySVr1+PiRVKhIAsKxPWrUqmoVCq5evVqg3NTpkzhpEmTxBWkhzYHj42NNTg3ceJEhoaGNttOFkHn7+/PefPmSS2jVebOJV9/XdPziUVSUlKzOe7JkydpbW3Na9euiSemBbKysmhnZ8dbt27p2G/cuEEbGxseO3bMoI3kQbd3795mx33kRmUl6ezcyKysH0XxV1VVxW7dunH37t069oaGBg4YMIArV64URYcpTJgwgbNmzTKwR0ZG0tfXl0+fPtWxSxp0dXV19PDwYHx8vJQyTCYpaQs9PDxYV1cnuK+FCxdy+PDhBjnuxo0bBS+CaCvageEzZ87o2LVP15s2bdKxSxp0sbGx9PLy4uPHj6WUYTLaye01a9YI6qekpKTZHFc7QJyWliao/+dhyZIl9PPzMxgY/vzzz+nk5MR79+49s0kWdBUVFbS3t2dWVpZUEp6LzMzMZnOY9qSxsZHnz583sLf0j5UDLX0h1Go1hw4dyqVLlz6zacrVr1wBVq4ESODJE+Af/wAmTtRUeV66BNTWGi0GvatQ4PuGBpMKR0ePHo2wsDBUVVXh5MmTbas6lQETJkyAi4sLMkRcVFFWVoZBgwbhxIkT8Pf3F81vW9i0aRM+/PBDXL9+XedFK7m5uQgICEBhYSEGDBgAsLaW7NuX1JbKPHhADhhAXr2qOX79ddLW1uhP6ZgxtLW1NelHO0FdXFwsztewndHmMGfPnhXNZ0vJupzQPuRERUUZnJs5cybHjh1LkgT37SPnz9f9REoKKdDTkba7XbJkiSDXF5r6+np++eWXXLx4sWi3upaGJeRIS8M52nTq0KFDVKCiAtDf7cfdHTh/XpAu+PDhw7hx4waOHj0qyPWFZt26ddiyZQtyc3MxaNAghIaGwsvLS1Cf2dnZiIiIgIeHh6B+2oMxY8YgODgYK1eu1HntgZubG9577z3ExMRAgV69gOPHdVtWVABuwmzmbGlpCYVCASsrK0GuLyRVVVVISEhAWloa3NzcUFBQgJiYGNy7d09QvyTRuXNnQX20J0lJSUhNTYVarUanJnusde7cWbNVLWtqNDmdtjt8+FCzJOrKFUG6X+19Pzo6WpDrC0l4eDhHjhxpMHaWkpLCdevWCeZ3z549HWIAvTWaFghonl4vXdLsAAhothBfsQKYMkVzPHGiZodnI5T6+SGoqMikb8KOHTsQEhKCK1euwMfHp61fJEloaUfzu3fvwsfHBxs2bMBbb70liG+SCAgIgI+PD9LS0gTxITQLFixAWVkZLly4YMIK/1OnNPugGqHSxgZ5KpVJAqZOnYopU6bAwsICWVlZJrWREpLw9/eHr68vtm7dqnPu3XffRXFxMXJzcwXd5byoqAjDhg1Dbm4uhg4dKpgfITDQLlV3q50Q/vbbb6WSYDI7d+5s9i01RUVFVCgUzMvLE0VHS4WTcqa58nZJp8GioqIkK0I0mUeP+J6/P5OSkgxOBQQEcM6cOaJJaalwUs40l49KGnTV1dXs3r07t6akSCmjdVatIvv141O9hRL79+8XbfuGprRUOClHtAUdCQkJOnbJS5suZ2RQ7eFB3r8vtRRD/vMfsnNn8vBhHXN9fT09PT0ZFxcnuqTWCiflRmxsLPv06WNQ0CF50FGtJocOJeU4QzF9OjlunIG5OimJ60JCRN2+oSkdYYai6QyEPtIHHUnm5mrqweU0F3vuHGll9ccctJbbt0l7e/LgQWl0/Q+5z8U2nWvVRx5BR5KzZpECb4tgMmo1OWQIuWKF4bnZs8m//lV8TXpot97QL5yUAxcuXGi1oEM+QVdRoelB5FBft3kz6exsmGf++9+aHvnSJWl06SHH+rrm6uf0kU/QkWRsLOnlRUpZSaxWk97emsBrSmMjOWwYuWiRNLqaQY6VxM1VCusjr6CrqyM9PEip10z8+iupv0XZjh2kkxMp4vYNpiCnNRMtrYnQR15BR5InTpBFRVKr0KW2lvzLX8jkZKmVGCCn1WEtrf7SR35BJ0cuXyaDgkiZzpzIYR1sa+tc9ekQW/qbMU5oaChI6hROAkBpaSlmzJjRrr4OHDgAX71XQ06ePBmdOnXC119/bbS9Oej+JNy8eRO+vr7IyspCUFDQM/uDBw+QnZ3drr4mTZoEZ2fnZ8cnT55ESEgIrl69Cm9vb+MXELbTfUGKi8kJE8jAQPKNN8jsbI29okIzjtaUnj3b308HQ4pdnEzZpUkf+QZda6vU2jPojK2G60Bonx43bNggms/169cb3Y9OH/m+G+zIEcDfH1AqNcdOTsDf/w6Y+Lom2fkRAQcHB8TFxSE2NlbwdRuA5ta9du1axMfHw9HR0eR28n1Nk7FVateuAW+88ce56mph/HQw5syZg9TUVMyZMwcjR44U1NeFCxfQu3dvhIeHt6mdfIPO2Co1pRI4ffqPc8+7ek3k1XBCY2lpiT179mDjxo043fTvIwD9+vVDcnJy29+kLeDt/sVobZVae+Z0Iq+GM0PKt6dzcAAOHACWLtUcq1TA2rVA//6a92WK4ceMIPwXl3Frqydtn8gAAAAASUVORK5CYII="></td>
+<td>O=C(O)Cn1ccc2ccccc2c1=O</td>
+<td>203.2</td>
+</tr><tr><td><img src="data:image/png;base64,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"></td>
+<td>CSc1nc(C)c(CCC(=O)[O-])c(=O)[nH]1</td>
+<td>227.3</td>
+</tr><tr><td><img src="data:image/png;base64,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"></td>
+<td>O=C(O)CN1Cc2ccccc2C1=O</td>
+<td>191.2</td>
+</tr></tbody></table><p><a href="/wp-content/uploads/2019/11/3784_2fafe62b-d22f-43da-888c-d2e7376644ae.sdf">Download SDF file</a></p>
+					</div>
+
+		<footer class="entry-footer"><p class="entry-meta"><span class="cat-links"><span class="screen-reader-text">Categories</span><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/mandeep-mann/" rel="category tag">Mandeep Mann</a>, <a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-toronto/" rel="category tag">SGC Univ. of Toronto</a>, <a href="https://thesgc.github.io/static-openlabnotebooks/category/project/usp5/" rel="category tag">USP5</a></span></p>		</footer></div>
+</article><nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://thesgc.github.io/static-openlabnotebooks/the-protein-wdr41-and-its-role-in-als/" rel="prev"><span class="meta-nav" aria-hidden="true">← Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">The protein  WDR41, and its role in ALS.</span></a></div><div class="nav-next"><a href="https://thesgc.github.io/static-openlabnotebooks/overexpressing-htt-in-neuronal-cells-update/" rel="next"><span class="meta-nav" aria-hidden="true">Next →</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Overexpressing HTT in neuronal cells: Update</span></a></div></div>
+	</nav><div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/testing-usp5-znf-ubd-analogues-with-a-displacement-assay-and-spr/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://thesgc.github.io/static-openlabnotebooks/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"><input type="hidden" name="comment_post_ID" value="3784" id="comment_post_ID"><input type="hidden" name="comment_parent" id="comment_parent" value="0"></p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="adc091c296"></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="60"></p>			</form>
+			</div>
+	
+</div>		
+		<div class="contact-form-link" id="id-926"> 
+		<a>Contact Mandeep Mann</a>	</div>
+	
+	
+	<div id="popup-id-926" title=" Contact Mandeep Mann" class="read-more-popup inactive">
+		<div class="read-more-text"></div>
+			<div class="read-more-link"><div role="form" class="wpcf7" id="wpcf7-f545-o1" lang="en-GB" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/testing-usp5-znf-ubd-analogues-with-a-displacement-assay-and-spr/#wpcf7-f545-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="545"><input type="hidden" name="_wpcf7_version" value="5.1.6"><input type="hidden" name="_wpcf7_locale" value="en_GB"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f545-o1"><input type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden" name="g-recaptcha-response" value=""></div>
+<p><label> Your Name (required)<br><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label> Your Email (required)<br><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label> Subject<br><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span> </label></p>
+<p><label> Your Message<br><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="4" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
+
+<p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"></p>
+<p><span class="wpcf7-form-control-wrap post-author-shortcode"><input type="hidden" name="post-author-shortcode" value="mandeep.mann@mail.utoronto.ca" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden" aria-invalid="false"></span></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
+	</div>
+	
+	</main><aside class="sidebar sidebar-primary widget-area" role="complementary"><section id="search-2" class="widget widget_search"><div class="widget-wrap">
+<form role="search" method="get" class="search-form" action="https://thesgc.github.io/static-openlabnotebooks/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for:"></label>
+	<input type="submit" class="search-submit" value="Search"></form>
+</div></section><section id="recent-posts-2" class="widget widget_recent_entries"><div class="widget-wrap">		<h4 class="widget-title">Recent Posts</h4>		<ul><li>
+					<a href="https://thesgc.github.io/static-openlabnotebooks/defining-epigenetic-drivers-of-medulloblastoma-03-dose-response-of-bay-299/">Defining Epigenetic Drivers of Medulloblastoma – 03 – Dose Response of BAY-299</a>
+									</li>
+											<li>
+					<a href="https://thesgc.github.io/static-openlabnotebooks/identifying-mono-methyl-arginines-with-ptmscan-mono-methyl-arginine-motif-mme-rg-kit-from-cst/">Identifying mono methyl arginines with  PTMScan® Mono-Methyl Arginine Motif [mme-RG] Kit from CST</a>
+									</li>
+											<li>
+					<a href="https://thesgc.github.io/static-openlabnotebooks/purification-of-htt-n-heat_81-1643-and-initial-biophysical-characterization/">Purification of HTT N-HEAT_81-1643 and initial biophysical characterization</a>
+									</li>
+											<li>
+					<a href="https://thesgc.github.io/static-openlabnotebooks/updates-on-all-the-huntingtin-samples-i-have-made-and-what-has-been-keeping-me-busy-in-the-lab/">Updates on all the huntingtin samples I have made and what has been keeping me busy in the lab</a>
+									</li>
+											<li>
+					<a href="https://thesgc.github.io/static-openlabnotebooks/experiments-on-poly-adp-ribose-par-levels-in-hd-cells-and-huntingtin-par-binding/">Experiments on poly ADP ribose (PAR) levels in HD cells and huntingtin PAR binding</a>
+									</li>
+					</ul></div></section><section id="recent-comments-2" class="widget widget_recent_comments"><div class="widget-wrap"><h4 class="widget-title">Recent Comments</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Dalia Barsyte</span> on <a href="https://thesgc.github.io/static-openlabnotebooks/identifying-mono-methyl-arginines-with-ptmscan-mono-methyl-arginine-motif-mme-rg-kit-from-cst/#comment-1059">Identifying mono methyl arginines with  PTMScan® Mono-Methyl Arginine Motif [mme-RG] Kit from CST</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://www.quora.com/Who-is-Dr-David-Greene-in-Arizona-at-R3-Stem-Cell" rel="external nofollow" class="url">Dr. David Greene</a></span> on <a href="https://thesgc.github.io/static-openlabnotebooks/modelling-diseases-of-the-brain-through-stem-cells/#comment-1056">Modelling diseases of the brain through stem cells</a></li><li class="recentcomments"><span class="comment-author-link">Jong Fu Wong</span> on <a href="https://thesgc.github.io/static-openlabnotebooks/determining-whether-bespoke-tracers-work-with-alk5-in-nanobret-target-engagement-assay/#comment-1053">Determining whether bespoke tracers work with ALK5 in nanoBRET target engagement assay</a></li><li class="recentcomments"><span class="comment-author-link">David Sexton</span> on <a href="https://thesgc.github.io/static-openlabnotebooks/determining-whether-bespoke-tracers-work-with-alk5-in-nanobret-target-engagement-assay/#comment-1051">Determining whether bespoke tracers work with ALK5 in nanoBRET target engagement assay</a></li><li class="recentcomments"><span class="comment-author-link">David Sexton</span> on <a href="https://thesgc.github.io/static-openlabnotebooks/shockingly-effective-electroporation-of-ribonucleoprotein-complexes-into-dipg-cells/#comment-1048">Shockingly effective – electroporation of ribonucleoprotein complexes into DIPG cells</a></li></ul></div></section><section id="archives-2" class="widget widget_archive"><div class="widget-wrap"><h4 class="widget-title">Archives</h4>		<ul><li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/12/">December 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/11/">November 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/10/">October 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/09/">September 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/08/">August 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/07/">July 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/06/">June 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/05/">May 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/04/">April 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/03/">March 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/02/">February 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2019/01/">January 2019</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/12/">December 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/11/">November 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/10/">October 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/09/">September 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/08/">August 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/07/">July 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/06/">June 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/05/">May 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/04/">April 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/03/">March 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/02/">February 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2018/01/">January 2018</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2017/12/">December 2017</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2017/11/">November 2017</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2017/10/">October 2017</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2017/09/">September 2017</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2017/08/">August 2017</a></li>
+	<li><a href="https://thesgc.github.io/static-openlabnotebooks/2017/07/">July 2017</a></li>
+		</ul></div></section><section id="categories-2" class="widget widget_categories"><div class="widget-wrap"><h4 class="widget-title">Categories</h4>		<ul><li class="cat-item cat-item-28"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/acvr1-alk2/">ACVR1/ALK2</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/alfredo-picado/" title="My name is Alfredo Picado and I am a native of Costa Rica. I studied chemistry at University of Costa Rica before moving to the USA for graduate school. I obtained my Ph.D. in Organic Chemistry from Clemson University in South Carolina under the supervision of Dr. Karl Dieter.  My research was focused on the development of new organocopper reagents for synthesis of highly functionalized synthons and heterocycles.
+
+During my graduate studies I spent 1 year at GlaxoSmithKline in Philadelphia, working on the synthesis of small molecule inhibitors of ion channels involved in heart failure. During this time I developed a keen interest in medicinal chemistry and drug discovery.
+
+After finishing my doctoral degree, I taught organic chemistry and biochemistry at Pfeiffer University, a private college in North Carolina. 
+
+Currently, I am a postdoctoral researcher in the SGC at the University of North Carolina Chapel Hill working under the supervision of Dr. David Drewry. I am currently developing chemical probes for the understudied protein kinases MST1-4 and MAP3K2. My research is jointly funded by the NIH and Luceome Biotechnologies.
+
+Alfredo Picado, Ph.D.">Alfredo Picado</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/als-reproducible-antibody-platform-als-rap/">ALS-Reproducible Antibody Platform (ALS-RAP)</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/alzheimers-disease/">Alzheimer’s disease</a>
+</li>
+	<li class="cat-item cat-item-115"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/amy-ramsey/" title="Dr. Ramsey is an Associate Professor in the Department of Pharmacology and Toxicology at the University of Toronto. She earned a B.S. in Microbiology from the University of Kentucky, and a Ph.D. in Genetics and Molecular Biology from the University of North Carolina at Chapel Hill. Her postdoctoral training was conducted with Dr. Marc Caron at Duke University Medical Center. As a graduate student at UNC, she developed a mouse model with a genetic deficiency of NMDA receptors caused by a mutation in Grin1. Since the creation of the mice in 1999, Dr. Ramsey has studied the physiological and behavioural consequences of Grin1 loss-of-function. She began working with GRIN families in 2018 to discover treatments for patients using mice that carry disease-causing mutations in Grin1, and serves a member of the scientific advisory board for CureGRIN.">Amy Ramsey</a>
+</li>
+	<li class="cat-item cat-item-116"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/amy-ramsey-univ-of-toronto/">Amy Ramsey (Univ. of Toronto)</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/amyotrophic-lateral-sclerosis-als/">Amyotrophic Lateral Sclerosis (ALS)</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/antoine-claessens/" title="Antoine Claessens is an INSERM researcher working on malaria genomics and transcriptomics. Biochemist by training, his interest in the Plasmodium parasite started with his PhD at Edinburgh university during which he developed an in vitro model for cerebral malaria. After a post-doc at the Sanger Institute on parasite mutation rate using whole genome sequencing, he was awarded a fellowship based at the London School of Hygiene & Tropical Medicine and at the MRC-Gambia. In Gambia, he recruited a unique cohort of P. falciparum infected asymptomatic carriers to study host-pathogen interactions over a long period of time. From the bench to bioinformatics via the bush, he is now an all-rounder malariologist starting his own group at MIVEGEC, Montpellier, France.  He recently joined the ‘Open Science movement’ as he is convinced that better sharing of data and methods across scientists can only speed up the elimination of malaria.">Antoine Claessens</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/antoine-claessens-laboratories/">Antoine Claessens</a>
+</li>
+	<li class="cat-item cat-item-121"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ashley-hutchinson/" title="Ashley earned her advanced diploma form Sir Sandford Fleming College, where she was awarded the Dean’s Award, for top marks and for her commitment to the field of community and science. Ashley joined SGC under the tutelage of Dr. Alma Seitova to work on Eukaryotic Expression platform, including Baculovirus mediated expression system for protein production and purification. Currently Ashley is involved in structural characterization of WDR41-SMCR8-C9ORF72 trimeric complex under the supervision of Dr. Levon Halabelian, which brings us to the open lab notebook.">Ashley Hutchinson</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ben-eduful/" title="Benjamin Eduful studied chemistry at the University of Cape Coast, Ghana, and with a strong interest in drug discovery and development, and the study of the interactions between xenobiotics and living systems, he pursued a MS in Clinical Pharmacology at the University of Aberdeen, Scotland, UK.
+
+He completed his PhD in Medicinal Chemistry at the University of South Florida under the direct supervision of Prof. James W. Leahy. Benjamin’s dissertation was focused on the design, synthesis and biological evaluation of small molecules as treatment for infectious and neurodegenerative diseases.
+
+He joined SGC at the University of North Carolina as a postdoctoral researcher in April 2018, working under Professor David Drewry. Benjamin’s research work is focused on the design and synthesis of small-molecule inhibitors for historically understudied protein kinases (specifically the Calcium/calmodulin-dependent protein kinase kinase 2, CaMKK2).">Ben Eduful</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/tbtc/">Brain Tumours</a>
+</li>
+	<li class="cat-item cat-item-114"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/carmen-jimenez-antunez/" title="Carmen is a postdoctoral researcher at the SGC Oxford. She completed her PhD in Medicinal Chemistry at Cardiff University. Her doctoral work focused on the design, synthesis and evaluation of new prodrugs that would enhance the anticancer activity of nucleoside analogues.
+In 2018 she joined the SGC working in the lab of Professor Paul Brennan and Dr Opher Gileadi. Carmen works as part of a multidisciplinary project for the development of target enable packages helping the discovery of drug development for Alzheimer Research.">Carmen Jimenez Antunez</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/carolyn-marks/" title="Carolyn Marks is Biotechnology Research Engineer at SGC Karolinska in Stockholm, Sweden. She obtained her PhD from the NIH-Karolinska Collaborative Doctoral Program in Neuroscience. Carolyn completed her Post-Doc at Karolinska & Science for Life Laboratory characterizing the ubiquitin proteasome system as therapeutic targets in neurodegenerative diseases. Carolyn has recently joined Susanne Gräslund and the SGC Karolinska Recombinant Antibody Production Team. At SGC Karolinska, Carolyn will primarily produce and validate gold standard antibodies for the ALS Reproducible Antibody Platform. Carolyn will merge the expertise of the SGC with the Human Antibody Therapeutics facility at the Drug Development and Discovery Platform of Science for Life Laboratory in Stockholm to generate, identify, and characterize the highest quality, renewable, recombinant antibodies for ALS-relevant antigens and make them freely available to the ALS research community.">Carolyn Marks</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/unc-catalyst/">Catalyst UNC Chapel Hill</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/chordoma/">Chordoma</a>
+</li>
+	<li class="cat-item cat-item-104"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/claudia-alvarez/" title="Claudia completed her PhD in Chemistry in 2018 under the supervision of Dr. Voula Kanelis at the University of Toronto. She studied the structural and functional consequences of diabetes- and hyperinsulinism-causing mutations in an ABC transporter protein called the sulfonylurea receptor using NMR, fluorescence spectroscopy and other biophysical techniques.
+She is working as a postdoctoral fellow at the SGC under the supervision of Dr. Cheryl Arrowsmith. Claudia's research focuses on determining the crystal structure and function of individual domains of the huntingtin protein, in order to elucidate its role in Huntington disease.">Claudia Alvarez</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/david-dilworth/" title="David is a postdoctoral fellow in the Cell Biology Group at the Structural Genomics Consortium Toronto. His research focuses on the epigenetic determinants of cancer, with an interest in how the transcriptional networks that drive the disease are established and maintained. David received his PhD in Biochemistry from the University of Victoria, Canada. His doctoral work focused on a noncovalent chromatin modification called proline isomerization. This research identified several novel functions for the nuclear proline isomerase FKBP25 in the maintenance of genomic stability. At the SGC, David will be using chemical probes (ie. precision inhibitors) that target epigenetic pathways relevant to human disease to study chromatin-centric phenomenon.
+
+A complete list of David’s publications can be found here.">David Dilworth</a>
+</li>
+	<li class="cat-item cat-item-90"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/diamond-light-source/">Diamond Light Source</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dipg/">Diffuse intrinsic pontine glioma</a>
+</li>
+	<li class="cat-item cat-item-58"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dravet-syndrome/">Dravet syndrome</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/egfr-and-gak/">EGFR and GAK</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ellie-williams/" title="Ellie Williams studied the structure and dynamics of HSP90 at University College London. After graduation she came to work at the SGC and has been working in the lab of Alex Bullock since 2010. Her work has been focusing on understanding the mutations in ALK2 which cause the rare connective tissue disorder Fibrodysplasia Ossificans Progressiva (FOP) – She has spent her time looking at the structure of ALK2 by x-ray crystallography, characterising the binding of drug molecules and compounds to the protein, investigating the specificity of binding, looking at the interaction of ALK2 with its interacting partners and characterising the effect of mutations on binding and activity.  Her work is funded by the UK charity, FOP Friends. 
+Since 2015 she has also been responsible for the public engagement activity within the SGC in Oxford, organising schools visits, festival participation and art exhibitions. When not in the lab Ellie spends her time costume making, reading and looking after her daughter.
+">Ellie Williams</a>
+</li>
+	<li class="cat-item cat-item-125"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/ependymoma/">Ependymoma</a>
+</li>
+	<li class="cat-item cat-item-78"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/epigenetic-targets-in-medulloblastoma/">Epigenetic targets in Medulloblastoma</a>
+</li>
+	<li class="cat-item cat-item-124"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/ezhip/">EZHIP</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/fop/">Fibrodysplasia ossificans progressiva</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/gene-therapy-for-dravet-syndrome/">Gene therapy for Dravet Syndrome</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/genna-luciani/" title="Genna received her PhD from the University of Toronto in the department of Molecular Genetics. Her doctoral research focused on small molecule identification and characterization using the nematode C. elegans as a model system.  She joined the SGC in 2015 in the cell biology group at SGC Toronto. In collaboration with Dr. Mark Minden’s lab, she is investigating the effect of SGC’s epigenetic chemical probes in poor prognosis acute myeloid leukemia patient cells.Her open lab notebook will focus on characterizing chemical probes targeting the polycomb repressive complex 2 (PRC2) in AML. This project is funded by the Leukemia and Lymphoma Society of Canada (LLSC). Outside of the lab, Genna enjoys all things food related, reading, crafting and obsessing over her many favourite animals.">Genna Luciani</a>
+</li>
+	<li class="cat-item cat-item-117"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/grin-disorder/">GRIN disorder</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/gtpase-gef-complex/">GTPase-GEF complex</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hao1/">HAO1</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/haresh-ajani/" title="Haresh received his Ph.D. in computational chemistry from the Palacky University, and Institute of Organic Chemistry and Biochemistry AS CR, Prague, Czech Republic in 2018. He completed his Ph.D. in structure based drug design, focusing on receptor-ligand scoring functions based on semi-empirical quantum mechanics (SQM).  He joined the Research Informatics group at SGC-Toronto in 2019 as a post-doctoral fellow, where he is contributing to the discovery of ligands for proteins involved in the ubiquitin proteasome system, and assesses in silico methods for the structure-based design of proteolysis targeting chimeras (PROTACs).">Haresh Ajani</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hdacs/">HDACs</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/huntingtin/">Huntingtin</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/chdi/">Huntington’s disease</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/in-silico-protacs-design/">In silico PROTACs design</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/ipsc-disease-modelling/">iPSC Disease modelling</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/ipscs/">iPSCs</a>
+</li>
+	<li class="cat-item cat-item-87"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jacob-mcauley/" title="Jacob McAuley is going into his third year at the University of Toronto completing his double major in Molecular Genetics and Immunology. Over the Summer, he will be working in the SGC under the guidance of Dr. Rachel Harding in the lab of Dr. Cheryl Arrowsmith. During his time at the SGC, he will focus on the huntingtin project, working to purify possible interaction partners of Huntingtin protein to aid in the understanding of its functions within cells. Mutations in this protein result in the development of Huntington’s Disease, a rare neurological disorder that currently has no cure. In the future, Jacob McAuley plans to pursue a carrier in the sciences with the eventual goal of obtaining a Ph.D. centered around genetic diseases such as Huntington’s.">Jacob McAuley</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/jolene-ho/" title="Jolene Ho obtained her Ph.D. in Cancer Biology under Prof Lorenz Poellinger’s lab at the Cancer Science Institute (CSI) of Singapore, National University of Singapore (NUS). After a postdoc in the same lab, she worked in Veredus Laboratories, a diagnostics company in Singapore. Currently, she is a postdoctoral fellow at the Structural Genomics Consortium (SGC) in Toronto, in the lab of Takis Prinos.
+
+Her projects are mostly focused on the role of regulatory proteins in cancer and other neurological disorders, and she has been studying the effects of molecular inhibitors on various regulators through methods such as qPCR, Western blotting, tissue culture and other functional in vitro assays. Currently, she is investigating mutations in huntingtin (HTT), which are heavily implicated in the onset of Huntington’s disease.">Jolene Ho</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jong-fu-wong/" title="Jong Fu Wong studied the novel cytosolic roles of epigenetic modifier EZH2 for his PhD at Nanyang Technological University (NTU), Singapore. After graduating, he decided to delve into more application-oriented studies. He now works for the Structural Genomics Consortium (SGC) at Oxford University as a Cell Biologist under the supervision of Associate Professor Alex Bullock.He is funded by The Brain Tumour Charity to help expedite the development of treatment for Diffused Intrinsic Pontine Gliomas (DIPG), a rare form of brain cancer that occurs in young children. Specifically, using patient-derived DIPG cell lines, he is screening through iterations of compounds rationally-designed by Professor Paul Brennan’s team based in Target Discovery Institute (TDI) to identify ones that can potently yet selectively inhibit ACVR1/ALK2, a kinase frequently mutated in DIPG. Similar ACVR1/ALK2 mutations are also responsible for the development of Fibrodysplasia Ossificans Progressiva (FOP), another rare genetic disease where connective tissues progressively ossified, freezing joints permanently and restrict movement. Therefore, compounds identified from the screens will also contribute to the development of FOP treatment.Besides that, he is interested to unravel some of the underlying mechanistic causes of DIPG and to explore the prospect of combination treatment. His many alter egos include an aspiring aquarist, a food junky and a dummy Judoka.">Jong Fu Wong</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jose-brandao-neto/" title="The main focus of my current research is twofold:
+
+i) the nucleotide metabolism of Schistosoma mansoni using structural molecular biology, an effort that has led to the determination of 8 novel structures and a total of 19 unique proteins solubilised between 2014 and 2018.
+ii) improving the quality of crystallographic models by introducing excited states, which will allow for direct interpretation of behaviour of metal centres in XFEL and synchrotron alike, a step beyond what is currently done through indirect assessment with multiple spectroscopic techniques.
+
+At the beamline level, I am interested in methods for improving the throughput while keeping the same data quality level, optimising the usage of the hardware, and developing standards for quantitative assessment of diffraction from protein crystals.">Jose Brandao-Neto</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/leukemia/">Leukemia</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/liz-brown/" title="I grew up in Northern Ireland and moved to Cambridge, England to do undergraduate degrees in Pathology and Biochemistry. After three years of study, and two months of research experience at the Karolinska Institute in Stockholm, I realised I wanted to focus my research on cancer. From there I completed undergraduate projects in mammary cell death, mammary tumour 3D culture, and a Master's project focused on the effect of heterogeneity on mammary tumours as well as training an in silico model of signalling within the mammary epithelium.
+I am now completing my PhD studies in the Structural Genomics Consortium in Oxford under the supervision of Alex Bullock. The focus of my study is the effect of ACVR1 mutations in diffuse intrinsic pontine glioma (DIPG), a paediatric brainstem tumour, and fibrodysplasia ossificans progressiva (FOP), a genetic disorder that causes extraskeletal bone formation. I aim to use patient derived cell lines to characterise how the mutation changes intracellular signalling and the behaviour of DIPG and FOP cells in a way that leads to disease.
+When I'm not making science, I can be found powerlifting in the gym, writing silly stories, or cosied up watching one of my favourite films.
+">Liz Brown</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/louisa-temme/" title="Louisa is a Postdoctoral Research Associate in the SGC at the University of North Carolina at Chapel Hill. She is developing chemical probes for understudied protein kinases under the supervision of Prof. David Drewry. Louisa is a pharmacist and obtained her doctoral degree in medicinal chemistry from Westfälische-Wilhelms-Universität Münster, Germany. In the working group of Prof. Bernhard Wünsch she gained experience in organic synthesis, medicinal chemistry and functional assay establishment during the development of novel neuroprotective molecules for the treatment of Morbus Alzheimer’s and Parkinson’s disease. To identify and analyze drug-target interactions of these negative allosteric modulators for the ifenprodil binding site of the GluN1a/GluN2B NMDA receptor she additionally learned and performed in silico docking and virtual screening of chemical libraries during a research stay at the lab of Prof. Wolfgang Sippl (Martin-Luther-Universität Halle-Wittenberg, Germany).">Louisa Temme</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/magdalena-szewczyk/" title="Magda received her M.Sc. degree from University of Lodz (Poland) and PhD degree from McMaster University (Canada). Currently, she is a research associate in the Cell Biology Group at the Structural Genomics Consortium Toronto. At the SGC, Magda is developing cellular assays for the validation of chemical probes of epigenetic modifiers and readers as well as researching their role in cancer cell biology. Since joining SGC-Toronto team in 2014, Magda has developed several assays for testing the enzymatic activity of PRMT1,3,5,6,8, 9 as well as SMYD2. She also utilized NanoLuc-Halo tag system for protein-protein interaction assay development of L3MBTL1/histoneH3, NSD3/histoneH3, RBBP4,7/MTA2, YAP1/TEAD1 and HDAC6/ISG15. Other than research Magda loves hiking, camping, traveling and organizing fundraising events. Her open lab book will focus on target validation and assay development for variety of epigenetic targets.">Magdalena Szewczyk</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/malaria/">Malaria</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/mandeep-mann/" title="Mandeep graduated from the University of Waterloo with a B.Sc in Honor’s Biochemistry in 2016 and is now a PhD candidate at the University of Toronto, Department of Pharmacology and Toxicology. She is working at the Structural Genomics Consortium, supervised by Dr. Matthieu Schapira, developing drug-like inhibitors against oncology targets. When Mandeep is not in the lab, she enjoys playing volleyball with friends, reading and travelling.
+
+USP5 Project
+Ubiquitin specific proteases (USPs) are the largest family of deubiquitinases and are responsible for removing ubiquitin from proteins. USPs have been on the radar of the drug discovery community for over a decade for the treatment of diseases such as cancer and neurodegeneration, but, with a few, rare exceptions, efforts to develop catalytic inhibitors have all failed thus far. In addition to the catalytic domain, some USPs, such as USP5, contain a zinc-finger ubiquitin binding domain (Zf-UBD). The goal of this research project is to develop ZnF-UBD chemical probes to see if pharmacologically targeting the non-catalytic domain of USP5 is a valid strategy. To the best of our knowledge, this is the first ever chemical biology open notebook.">Mandeep Mann</a>
+</li>
+	<li class="cat-item cat-item-91"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/michael-taylor-sickkids/">Michael Taylor (SickKids Hospital Toronto)</a>
+</li>
+	<li class="cat-item cat-item-92"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/montreal-neurological-institute/">Montreal Neurological Institute</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/nmda/">NMDA</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/nsd3/">NSD3</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/open-secretion-rescue/">Open Secretion Rescue</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/opher-gileadi/" title="I grew up in Israel and studied for my BSc and PhD at the Hebrew University in Jerusalem. I then did a post-doc in Roger Kornberg's lab at Stanford, and started my own group at the Weizmann Institute in Rehovot, Israel. Since 2004 I've been at the Structural Genomics Consortium at the University of Oxford. My team looks at the structure and function of proteins involved in human diseases; we aim to build the tools and knowledge to test the utility of these proteins as drug targets. While focussing for many years on DNA repair and cancer, we are now looking at new targets for Alzheimer's disease and other neurodegenerative diseases.">Opher Gileadi</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/parkinsons-disease-and-neurodevelopmental-disorders/">Parkinson's disease and neurodevelopmental disorders</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/pietro-roversi/" title="Pietro grew up in Verona, Italy and studied Chemistry at the University of Milano (1987-1993) where he graduated with honours and a passion for structural science. He stayed on in Milano to study for a PhD in structural chemistry under the supervision of Riccardo Destro, working on the multipole and Maximum Entropy modelling of charge densities in crystalline solids (1993-1997). With Gérard Bricogne at the MRC Laboratory of Molecular Biology and at Global Phasing Ltd. (1997-2003) Pietro learnt macromolecular crystallographic theory and computing, and contributed to the writing of the macromolecular crystallography refinement package Buster-TNT (now autoBUSTER).
+
+With Susan Lea at the Biochemistry and Pathology Departments of Oxford University Pietro learnt protein chemistry and determined macromolecular structures of human complement proteins and bacterial proteins involved in infection mechanisms (2003-2012). After a 1-year Ikerbasque Fellowship in Bilbao (Spain) Pietro returned to Oxford in 2013 to join the group of Nicole Zitzmann at the Biochemistry Department, where he determined the first structure of the ER glycoprotein quality control (ERQC) checkpoint enzyme, UGGT.
+
+At Leicester, a 2-year LISCB-WT ISSF Fellowship enables Pietro to start the development of inhibitors of ERQC and ER associated degradation (ERAD) machineries. These inhibitors have the potential to become broad-spectrum rescuers of secretion of responsive mutant glycoproteins in rare disease. As Dr. Strangelove would put it, one day Pietro hopes to train cells to stop checking and love secretion.">Pietro Roversi</a>
+</li>
+	<li class="cat-item cat-item-93"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/pietro-roversi-leic/">Pietro Roversi (Univ. of Leicester)</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/prc2/">PRC2</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/primary-hyperoxaluria/">Primary Hyperoxaluria</a>
+</li>
+	<li class="cat-item cat-item-127"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/prmts/">PRMTs</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/rachel-harding/" title="Rachel Harding completed her PhD at the University of Oxford and now works for the SGC at the University of Toronto as a Postdoctoral Fellow supervised by Professor Cheryl Arrowsmith. Rachel is funded by the CHDI foundation and is studying Huntington’s disease, in particular, researching the protein encoded by the gene mutated in HD patients called huntingtin. Rachel is interested in the 3D structure of the huntingtin protein as well as how it functions in cells and is studying huntingtin protein by both cryo electron microscopy and X-ray crystallography. Rachel is interested in Open Science and Open Data and actively advocates for scientists to share their research outputs freely and without restriction. Since February 2016, Rachel has put all of her research findings on her Huntington’s disease project into an open notebook, LabScribbles, and curates the LabScribbles data collection on the repository Zenodo. Outside of the lab, Rachel is a keen cyclist and enjoys riding and exploring the Canadian countryside on her Brompton folding-bicycle. ">Rachel Harding</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/rare-disease/">Rare disease</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/ray-truant-mcmaster/">Ray Truant (McMaster Univ.)</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/roslin-adamson/" title="Roslin completed her DPhil in the Department of Biochemistry at Oxford University working on the interactions between G protein-coupled receptors and G proteins. She now works at the SGC in Oxford as a post-doctoral research associate supervised by Alex Bullock.She was funded by CHDI initially to work on the structural biology of KEAP1 bound to an E3 ubiquitin ligase, and the involvement of this complex in Huntington’s disease. She is now funded by FOP Friends and M4K Pharma and is working on ACVR1/ALK2, a protein involved in Fibrodysplasia Ossificans Progressiva (FOP), a rare connective tissue disease. This work includes solving the 3D x-ray crystallography structure of the protein bound to various different small compounds, with the aim to find potential inhibitor compounds for development into drugs. It also includes developing activity assays for the protein so that we can screen more compounds. In her spare time Roslin is a keen sculptor of tree-like objects.">Roslin Adamson</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/sabrina-mackinnon/" title="Sabrina completed her undergraduate studies in Bioscience and Biomedical Sciences at Robert Gordon University, Aberdeen with a growing interest in studying the group of rare metabolic disorders known as inborn errors of metabolism. Sabrina is currently undertaking her DPhil studies at SGC University of Oxford, under the supervision of Wyatt Yue and Paul Brennan. The focus of her project is to develop small molecule therapies for inborn errors of metabolism by substrate reduction and pharmacological chaperoning. When not in the lab, Sabrina enjoys trips to the seaside and reading the most ridiculous science fiction she can find.
+
+Primary hyperoxaluria project
+
+Primary hyperoxalurias are rare genetic disorders caused by inherited mutations that lead to a build-up of glyoxylate, a normal metabolite in amino acid breakdown and production. When glyoxylate is not converted to more useful substances, it accumulates and is converted instead to oxalate, which is very damaging to the kidneys. One potential approach to treating these disorders, is to reduce the production of glyoxylate by inhibiting the enzyme that produces it: hydroxyacid oxidase 1 (HAO1, also called glycolate oxidase). The aim of Sabrina’s project is to identify, characterise and validate small molecule inhibitors of HAO1, combining cutting-edge methods of fragment screening, x-ray crystallography, and chemical biology.">Sabrina Mackinnon</a>
+</li>
+	<li class="cat-item cat-item-61"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/sean-obyrne/" title="Sean is a medicinal chemistry post-doctoral researcher in the Structural Genomics Consortium in UNC.  He has a keen interest in the synthesis and applications of protein inhibitors and activity-based probes to elucidate drug targets and identify therapeutic opportunities. He is also interested in drug repurposing, especially using human kinase inhibitors to target the kinome of neglected tropical diseases.
+
+He has extensive experience in route design, multistep synthesis, purification and characterization of complex small molecules, as well as expertise in the design and synthesis of BODIPY fluorescent dyes. During his PhD research in the University of Glasgow, he worked on two distinct projects. He developed an effective anti-parasitic drug delivery system which selectively targets infected host cells. His second project involved the synthesis of self-reporting activity-based probes for kinases, allowing for detection of covalent bond formation between proteins and ligands.">Sean O'Byrne</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/serap-beldar/" title="Serap Beldar received her B.Sc. degree in Molecular Biology and Genetics from Izmir Institute of Technology, and M.Sc. degree in Computational Sciences and Engineering from Koç University. She recently earned her Ph.D. (in Biological Sciences) from Nanyang Technological University as a Singapore International Graduate Award (SINGA) scholar. During her doctoral studies, she has specialized in the production and biophysical characterization of proteins. Her current research involves structural characterization of histone-modifying enzymes and deciphering molecular interactions with their interacting partners.">Serap Beldar</a>
+</li>
+	<li class="cat-item cat-item-123"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/setayesh-yazdani/" title="Setayesh received her H.B.Sc. from the University of Toronto in the Biomedical Toxicology Specialist program in June 2018. During her fourth thesis project at Sunnybrook Research Institute, she examined the relationship between type 2 diabetes mellitus and Alzheimer’s disease by specifically looking at the cognitive scores, anatomical structures, and blood biomarker changes in patients with Alzheimer’s disease. She joined Structural Genomic Consortium (SGC) in 2019 as a M.Sc. student in the department of Pharmacology and Toxicology, University of Toronto. At SGC, Setayesh is currently working on a project related to Enhancer of Zeste Homologs inhibitory protein (EZHIP), an important protein in Posterior fossa type A (PFA) ependymomas oncogenicity pathway.  Her goal is to find out if there is a structural domain within EZHIP which can be targeted by a ligand. If that is the case, using PROTAC design, she hopes to target EZHIP for degradation.
+
+Setayesh concurrently works on another bioinformatics project called the Ligandable Human Genome. For that she uses the software tool ICM where she can integrate and analyze different sources of data such as from Protein Data Bank, DrugBank, and Cancer Dependency Map Databases from Sanger and Broad Institutes.
+
+Outside the lab, She is an enthusiastic fitness instructor and works as a coach at Fight Fitness Markham on her weekends. She enjoys leadership activities on campus; she is one of the first-year representatives of her graduate pharmacology cohort. At Iranian Student Association at UofT, Setayesh focuses on membership outreach by increasing community engagement through their mentorship program and other social events.">Setayesh Yazdani</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/setdb1/">SETDB1</a>
+</li>
+	<li class="cat-item cat-item-103"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-karolinska/">SGC Karolinska</a>
+</li>
+	<li class="cat-item cat-item-95"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-unc/">SGC UNC Chapel Hill</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-oxford/">SGC Univ. of Oxford</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-toronto/">SGC Univ. of Toronto</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/stephen-armstrong/" title="I first began studying cancer under Dr. Carita Lanner at the Northern Ontario School of Medicine, investigating the transcriptomes of ovarian cancer cell lines that had acquired drug resistance to broad range chemotherapeutics. Acquired resistance to more than one drug (ex. dual-resistant cell lines) often proved to be sufficient for development of multi-drug resistance, a process where cancer cells become resistant to multiple broad-range chemotherapeutics including those it has not been previously exposed to. This phenomenon highlighted a common problem with nonspecific drugs used to treat common cancers.The primary focus of modern day cancer treatment involves targeted therapy, in which drugs are designed to exploit specific processes that cancer cells rely on, avoiding the induction broad-range resistance and toxicity associated with classical chemotherapy.  These often seek to hobble key oncogenic processes that drives tumor proliferation in specific cancer types (ex. Herceptin targeting the HER-2 receptor in HER-2+ breast cancer), or enable the function of tumor suppressor proteins (ex. MDM2 interference to induce activation of the p53 tumor suppressor protein).  The major problem with targeted therapy is that most cancers lack targeted therapy options.  In 2011, I travelled to Edmonton, Alberta to take up a doctoral position under Dr. Roger Leng studying the p53 tumor suppressor family, a family that is dysregulated in roughly 80% of all cancers, and is the most striking commonality shared between cancers in general.  Developing targeted therapy options for these family members would be ground-breaking in the treatment of cancer, however, transcriptional factors have proven difficult to exploit.  During my studies there, I investigated the regulation of the metastatic TAp63 protein by the ubiquitin-proteasome system and discovered a cross-talk regulatory pathway between proteasome-mediated degradation and the heat shock response pathway that proved to be a major regulator of this transcription factor, and therefore, a possible anti-metastatic target.  After graduating from the University of Alberta in 2016, I sought a postdoctoral position at the Hospital for Sick Children (Toronto, Ontario), and was successful in gaining one under the lab of Dr. Michael Taylor studying childhood brain malignancies, the most predominant of which being medulloblastoma.  Children suffering from medulloblastoma have a specific need for targeted therapy options because radiation treatment common used to treat these cancers is associated with severe developmental defects and reduction in quality of life.  The major problem is the most metastatic form of medulloblastoma lacks clear mutational drivers.  Despite this problem, epigenetic aberrations have been observed in these cells, and our hypothesis is that these epigenetic defects are driving tumorigenesis.  To this end, I am collaborating with the Structural Genomics Consortium (University of Toronto) under Dr. Panagiotis Prinos, to screen medulloblastoma cells with an ever-expanding library of probes designed to interfere with specific epigenetic proteins.  From this research, I hope to drive progress forward in discovering and developing targeted therapies for children suffering from this disease.
+
+2008 – B.Sc. Biomedical Biology (Laurentian University – Sudbury, Ontario)
+2010 – M.Sc. Biology (Laurentian University – Sudbury, Ontario)
+2016 – Ph.D. Medical Sciences (University of Alberta – Edmonton, Alberta)">Stephen R. Armstrong</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/tamara-maiuri/" title="Tamara Maiuri completed her PhD at the University of Toronto and currently works as a Research Associate in Dr. Ray Truant's group at McMaster University, Hamilton, Canada. The Truant lab studies the normal biological functions of the huntingtin protein in hopes of understanding how they may be disrupted upon inheritance of the expanded huntingtin gene that causes Huntington’s disease. Tamara is investigating the role of the huntingtin protein in the process of DNA repair, in a project funded by the HDSA Berman/Topper Fellowship. She has openly shared her results in blog form (raytruantlab.ca/real-time-open-reports/) and through the Truant lab Zenodo community since 2017. Tamara is also a member of the band Eli & the Straw Man, who has partnered with the Huntington Society of Canada since 2016 to raise funds and awareness for Huntington’s disease through their music.">Tamara Maiuri</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/thomas-durcan/" title="As an assistant professor at the Montreal Neurological Institute (MNI) and McGill University https://www.youtube.com/watch?v=kuO2IKE4JME), my research focus is on applying patient-derived stem cells towards the development of phenotypic discovery assays and 3D mini-brain models (https://www.youtube.com/watch?v=zjOS_trumik) for both neurodegenerative and neurodevelopmental disorders. As group leader of the iPSC platform at the Montreal Neurological Institute (MNI), I oversee a team of 30 research staff and students and growing, committed to applying novel stem cell technology, combined with CRISPR genome editing, mini-brain models and new microfluidic technologies towards elucidating the underlying causes of these complex disorders. Leading the SGC tissue platform, NeuroSGC; I oversee a team committed to assay development, in parallel with leading the establishment of NeuroCDRD, towards the automation of our open assays for small molecule screens. In addition, I am also part of antibody validation efforts (https://www.als-rap.org) between the MNI, Oxford and the Karolinska to generate CRISPR KO cell-lines for validating commercial antibodies against high-value ALS targets. Combined with new approaches in the group towards building multiomic profiles on the patient-derived IPSC cells within the group, the long term strategy over the coming years is to identify new personalized precision therapies that can be applied towards building clinical trials on a dish. Further information on the iPSC platform is found here (http://www.mcgill.ca/ipsquebec-mni/)">Thomas M. Durcan</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/tobias-krojer/" title="Tobias works as a Team Leader in the PX group at SGC Oxford. He joined Frank’s group in 2009 and the main focus of his research is fragment-based lead discovery and crystallographic software development.
+
+Tobias studied Biotechnology at FH Weihenstephan (Germany) in the late nineties. He trained as a structural biologist at the Max Planck Institute of Biochemistry in Martinsried (Germany) and received a PhD from Cardiff University in 2005. Afterwards, he worked as a postdoc at the Institute of Molecular Pathology in Vienna (Austria).">Tobias Krojer</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/understudied-kinases/">Understudied Kinases</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/usp5/">USP5</a>
+</li>
+	<li class="cat-item cat-item-85"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/victoria-vu/" title="Victoria received her PhD from the University of Toronto, Canada. Her grad studies focused on the effects of natural variation in genetic backgrounds on perturbed phenotypes using C. elegans as a model organism. Victoria works in Dalia Barsyte-Lovejoy’s group at SGC Toronto focusing on the development of cellular assays for E3 ligases.">Victoria Vu</a>
+</li>
+	<li class="cat-item cat-item-122"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/wdr41/">WDR41</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/wen-yih-aw/" title="Wen completed her Ph.D. in Molecular Biology at Princeton University studying how cells establish a sense of direction within a 2D plane. She is now a Postdoctoral Research Associate at the UNC Catalyst for Rare Diseases, developing a dual-vector gene therapy strategy for Dravet Syndrome.
+
+Dravet Syndrome is a rare and severe form of epilepsy that begins in infancy. It is commonly caused by haploinsufficiency in scn1a gene, a gene that codes for voltage-gated sodium channel. Specifically, her project will focus on the development of a protein trans-splicing system that allows us to bypass the packaging size limit of AAV vectors to enable gene therapy for Dravet Syndrome.">Wen Yih Aw</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/xchem/">XChem</a>
+</li>
+		</ul></div></section><section id="meta-2" class="widget widget_meta"><div class="widget-wrap"><h4 class="widget-title">Meta</h4>			<ul><li><a href="https://thesgc.github.io/static-openlabnotebooks/wp-login.php">Log in</a></li>
+			<li><a href="https://thesgc.github.io/static-openlabnotebooks/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://thesgc.github.io/static-openlabnotebooks/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul></div></section></aside></div>
+	    </div>
+		            
+	<footer id="colophon" class="site-footer" role="contentinfo"><div id="site-generator">
+	    		<div class="wrapper">
+	    			<div id="footer-content" class="copyright"><a href="https://thesgc.github.io/static-openlabnotebooks/">openlabnotebooks.org</a> is licensed under a <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC-BY</a> licence | 2019 <a target="_blank" href="http://www.thesgc.org/science/research-informatics">SGC RI</a></div>
+	    		</div>
+			</div>	</footer></div>
+		
+<a href="#masthead" id="scrollup" class="genericon"><span class="screen-reader-text">Scroll Up</span></a><nav id="mobile-header-left-nav" class="mobile-menu" role="navigation"><ul id="header-left-nav" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-27"><a href="https://thesgc.github.io/static-openlabnotebooks">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3061"><a href="https://thesgc.github.io/static-openlabnotebooks/laboratories/">Laboratories</a>
+<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3060"><a href="https://thesgc.github.io/static-openlabnotebooks/active-laboratories/">Active</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3373"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/amy-ramsey-univ-of-toronto/">Amy Ramsey (Univ. of Toronto)</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3067"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/diamond-light-source/">Diamond Light Source</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3068"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/michael-taylor-sickkids/">Michael Taylor (SickKids Hospital Toronto)</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3069"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/montreal-neurological-institute/">Montreal Neurological Institute</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3071"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/pietro-roversi-leic/">Pietro Roversi (Univ. of Leicester)</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3072"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/ray-truant-mcmaster/">Ray Truant (McMaster Univ.)</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3073"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-unc/">SGC UNC Chapel Hill</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3074"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-oxford/">SGC Univ. of Oxford</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3075"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-toronto/">SGC Univ. of Toronto</a></li>
+	</ul></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3059"><a href="https://thesgc.github.io/static-openlabnotebooks/past-laboratories/">Past</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3076"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/antoine-claessens-laboratories/">Antoine Claessens</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3077"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/unc-catalyst/">Catalyst UNC Chapel Hill</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3078"><a href="https://thesgc.github.io/static-openlabnotebooks/category/laboratory/sgc-karolinska/">SGC Karolinska</a></li>
+	</ul></li>
+</ul></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-115"><a href="https://thesgc.github.io/static-openlabnotebooks/people/">People</a>
+<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2962"><a href="https://thesgc.github.io/static-openlabnotebooks/active-people/">Active</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-123"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/alfredo-picado/">Alfredo Picado</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3372"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/amy-ramsey/">Amy Ramsey</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3651"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ashley-hutchinson/">Ashley Hutchinson</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1118"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ben-eduful/">Ben Eduful</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3346"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/carmen-jimenez-antunez/">Carmen Jimenez Antunez</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3102"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/claudia-alvarez/">Claudia Alvarez</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-257"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/david-dilworth/">David Dilworth</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1050"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/ellie-williams/">Ellie Williams</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2681"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/haresh-ajani/">Haresh Ajani</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2902"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jacob-mcauley/">Jacob McAuley</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-176"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jong-fu-wong/">Jong Fu Wong</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1993"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/jose-brandao-neto/">Jose Brandao-Neto</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3414"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/katheron-intson/">Katheron Intson</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-177"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/liz-brown/">Liz Brown</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2124"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/louisa-temme/">Louisa Temme</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2790"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/magdalena-szewczyk/">Magdalena Szewczyk</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-135"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/mandeep-mann/">Mandeep Mann</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2203"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/opher-gileadi/">Opher Gileadi</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1700"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/pietro-roversi/">Pietro Roversi</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"><a target="_blank" href="http://labscribbles.com/">Rachel Harding</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1772"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/sabrina-mackinnon/">Sabrina Mackinnon</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2867"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/serap-beldar/">Serap Beldar</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3761"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/setayesh-yazdani/">Setayesh Yazdani</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2956"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/stephen-armstrong/">Stephen R. Armstrong</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2461"><a target="_blank" href="https://raytruantlab.ca/real-time-open-reports/">Tamara Maiuri</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3770"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/tatiana-lipina/">Tatiana Lipina</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2447"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/thomas-durcan/">Thomas M. Durcan</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2311"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/tobias-krojer/">Tobias Krojer</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2882"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/victoria-vu/">Victoria Vu</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3415"><a href="https://thesgc.github.io/static-openlabnotebooks/category/scientist/yuanye-yan/">Yuanye Yan</a></li>
+	</ul></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2961"><a href="https://thesgc.github.io/static-openlabnotebooks/past-people/">Past</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1162"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/antoine-claessens/">Antoine Claessens</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2963"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/carla-alamillo/">Carla Alamillo</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2029"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/carolyn-marks/">Carolyn Marks</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-308"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/genna-luciani/">Genna Luciani</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2968"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/jolene-ho/">Jolene Ho</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2964"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/kaleb-naegeli/">Kaleb Naegeli</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2965"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/megha-abbey/">Megha Abbey</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2966"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/nirav-kapadia/">Nirav Kapadia</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-376"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/roslin-adamson/">Roslin Adamson</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1972"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/sean-obyrne/">Sean O’Byrne</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2967"><a href="https://thesgc.github.io/static-openlabnotebooks/category/past-scientist/wen-yih-aw/">Wen Yih Aw</a></li>
+	</ul></li>
+</ul></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-118"><a href="https://thesgc.github.io/static-openlabnotebooks/disease-foundations/">Diseases</a>
+<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1761"><a href="https://thesgc.github.io/static-openlabnotebooks/active-diseases/">Active</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1855"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/alzheimers-disease/">Alzheimer’s disease</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2026"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/amyotrophic-lateral-sclerosis-als/">Amyotrophic Lateral Sclerosis (ALS)</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1140"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/chordoma/">Chordoma</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-144"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dipg/">Diffuse intrinsic pontine glioma</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3759"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/ependymoma/">Ependymoma</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/fop/">Fibrodysplasia ossificans progressiva</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3374"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/grin-disorder/">GRIN disorder</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-600"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/chdi/">Huntington’s disease</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2504"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/ipsc-disease-modelling/">iPSC Disease modelling</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-255"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/leukemia/">Leukemia</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1144"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/malaria/">Malaria</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2449"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/parkinsons-disease-and-neurodevelopmental-disorders/">Parkinson’s disease and neurodevelopmental disorders</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1774"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/primary-hyperoxaluria/">Primary Hyperoxaluria</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1702"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/rare-disease/">Rare disease</a></li>
+	</ul></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1760"><a href="https://thesgc.github.io/static-openlabnotebooks/past-diseases/">Past</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1873"><a href="https://thesgc.github.io/static-openlabnotebooks/category/disease-foundation/dravet-syndrome/">Dravet syndrome</a></li>
+	</ul></li>
+</ul></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-155"><a href="https://thesgc.github.io/static-openlabnotebooks/projects/">Projects</a>
+<ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1759"><a href="https://thesgc.github.io/static-openlabnotebooks/active-projects/">Active</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-356"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/acvr1-alk2/">ACVR1/ALK2</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2027"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/als-reproducible-antibody-platform-als-rap/">ALS-Reproducible Antibody Platform (ALS-RAP)</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2883"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/e3-ligases/">E3 ligases</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2771"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/epigenetic-targets-in-medulloblastoma/">Epigenetic targets in Medulloblastoma</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3760"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/ezhip/">EZHIP</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1856"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/gtpase-gef-complex/">GTPase-GEF complex</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1773"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hao1/">HAO1</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-451"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hdacs/">HDACs</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3295"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/hero-glove/">HERO Glove</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-601"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/huntingtin/">Huntingtin</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2682"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/in-silico-protacs-design/">In silico PROTACs design</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2503"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/ipscs/">iPSCs</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3375"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/nmda/">NMDA</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-357"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/nsd3/">NSD3</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1703"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/open-secretion-rescue/">Open Secretion Rescue</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-504"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/prc2/">PRC2</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3847"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/prmts/">PRMTs</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2868"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/setdb1/">SETDB1</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3184"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/investigating-outdoor-mobility-of-older-adults/">Investigating Outdoor Mobility of Older Adults</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-254"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/understudied-kinases/">Understudied Kinases</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-157"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/usp5/">USP5</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3652"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/wdr41/">WDR41</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1960"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/xchem/">XChem</a></li>
+	</ul></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1758"><a href="https://thesgc.github.io/static-openlabnotebooks/past-projects/">Past</a>
+	<ul class="sub-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1141"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/egfr-and-gak/">EGFR and GAK</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1874"><a href="https://thesgc.github.io/static-openlabnotebooks/category/project/gene-therapy-for-dravet-syndrome/">Gene therapy for Dravet Syndrome</a></li>
+	</ul></li>
+</ul></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-923"><a href="https://thesgc.github.io/static-openlabnotebooks/the-team/">The team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-919"><a href="https://thesgc.github.io/static-openlabnotebooks/about/">About</a></li>
+</ul></nav><script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/thesgc.github.io\/static-openlabnotebooks\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"ccbdadce50","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/thesgc.github.io\/static-openlabnotebooks\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"1","version":"1"};
+/* ]]> */
+</script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js"></script><script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Lf14Y0UAAAAAODV6ncwHqbFUCAo4VV5YoU3_2Q4&ver=3.0"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/js/navigation.min.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/js/skip-link-focus-fix.min.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/js/fitvids.min.js"></script><script type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/themes/clean-journal-pro/js/clean-journal-scrollup.min.js"></script><script async="async" type="text/javascript" src="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/akismet/_inc/form.js"></script><script type="text/javascript">
+( function( grecaptcha, sitekey, actions ) {
+
+	var wpcf7recaptcha = {
+
+		execute: function( action ) {
+			grecaptcha.execute(
+				sitekey,
+				{ action: action }
+			).then( function( token ) {
+				var forms = document.getElementsByTagName( 'form' );
+
+				for ( var i = 0; i < forms.length; i++ ) {
+					var fields = forms[ i ].getElementsByTagName( 'input' );
+
+					for ( var j = 0; j < fields.length; j++ ) {
+						var field = fields[ j ];
+
+						if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
+							field.setAttribute( 'value', token );
+							break;
+						}
+					}
+				}
+			} );
+		},
+
+		executeOnHomepage: function() {
+			wpcf7recaptcha.execute( actions[ 'homepage' ] );
+		},
+
+		executeOnContactform: function() {
+			wpcf7recaptcha.execute( actions[ 'contactform' ] );
+		},
+
+	};
+
+	grecaptcha.ready(
+		wpcf7recaptcha.executeOnHomepage
+	);
+
+	document.addEventListener( 'change',
+		wpcf7recaptcha.executeOnContactform, false
+	);
+
+	document.addEventListener( 'wpcf7submit',
+		wpcf7recaptcha.executeOnHomepage, false
+	);
+
+} )(
+	grecaptcha,
+	'6Lf14Y0UAAAAAODV6ncwHqbFUCAo4VV5YoU3_2Q4',
+	{"homepage":"homepage","contactform":"contactform"}
+);
+</script><script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-bottom-bar");
+							$("html").addClass("cookie-bar-bar");
+													}
+																			ctccFirstPage();
+											});
+				</script><div id="catapult-cookie-bar" class=""><div class="ctcc-inner "><span class="ctcc-left-side">This site uses cookies:  <a class="ctcc-more-info-link" tabindex="0" target="_blank" href="https://thesgc.github.io/static-openlabnotebooks/cookie-policy/">Find out more.</a></span><span class="ctcc-right-side"><button id="catapultCookie" tabindex="0" onclick="catapultAcceptCookies();">Okay, thank you</button></span></div></div>
+</body></html>
