@@ -849,7 +849,7 @@ h4.pt-cv-title {font-size: 18px;}
 .pt-cv-scrollable .pt-cv-cap-wo-img {position: relative !important;bottom: 0 !important;left: 0;right: 0;}
 .pt-cv-cap-wo-img * {color: #000;}
 .pt-cv-cap-wo-img .pt-cv-readmore {color: #fff;}
-.pt-cv-view .carousel-control {background-image: none !important;height: 30px;width: 40px;bottom: 0;top: auto;color: #00a100;}
+.pt-cv-view .carousel-control {background-image: none !important;height: 30px;width: 40px;bottom: 0;top: auto;color: #00a100;cursor: pointer;}
 .pt-cv-view .pt-cv-carousel-indicators {bottom: 0;margin-bottom: 4px;}
 .pt-cv-view .pt-cv-carousel-indicators li {background: #cecece;border: 1px solid #cecece;margin: 0;}
 .pt-cv-view .pt-cv-carousel-indicators li.active {background: #428bca;border: 1px solid #428bca;}
