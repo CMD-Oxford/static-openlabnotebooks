@@ -32,7 +32,8 @@ jQuery(document).ready(function($) {
 	// Edit the 'Not found' message on empty category pages
 	
 	var pageTitle = $(".no-results.not-found .page-header > h1").text();
-	if (pageTitle == 'Nothing Found') {
+	var searchPage = $('body').hasClass('search-no-results');
+	if (pageTitle == 'Nothing Found' && searchPage != true) {
 		$(".no-results.not-found .page-header > h1").text("Coming soon");
 		$(".no-results.not-found .page-header > h1").css("border-bottom", "none");
 		$(".no-results.not-found .page-content").hide();
