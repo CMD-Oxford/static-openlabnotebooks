@@ -1,16 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="19th June 2020 11:18 am" -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://thesgc.github.io/static-openlabnotebooks/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.1" -->
+<!-- generated-on="9th October 2020 11:34 am" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-misc.xml</loc>
-		<lastmod>2020-06-17T12:56:40+00:00</lastmod>
+		<lastmod>2020-10-01T14:41:13+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-tax-category.xml</loc>
-		<lastmod>2020-06-17T12:56:40+00:00</lastmod>
+		<lastmod>2020-10-01T14:41:13+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2020-09.xml</loc>
+		<lastmod>2020-09-21T13:09:33+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2020-08.xml</loc>
+		<lastmod>2020-08-24T21:20:54+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2020-07.xml</loc>
+		<lastmod>2020-07-24T09:27:17+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2020-06.xml</loc>
-		<lastmod>2020-06-17T12:56:40+00:00</lastmod>
+		<lastmod>2020-07-02T19:28:40+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-post-2020-05.xml</loc>
@@ -153,6 +165,14 @@
 		<lastmod>2019-07-01T14:06:31+00:00</lastmod>
 	</sitemap>
 	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2020-10.xml</loc>
+		<lastmod>2020-10-01T14:41:13+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2020-09.xml</loc>
+		<lastmod>2020-09-21T19:27:07+00:00</lastmod>
+	</sitemap>
+	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2020-05.xml</loc>
 		<lastmod>2020-05-19T13:16:44+00:00</lastmod>
 	</sitemap>
@@ -170,7 +190,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-03.xml</loc>
-		<lastmod>2019-06-26T08:47:53+00:00</lastmod>
+		<lastmod>2020-09-18T11:06:15+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-02.xml</loc>
@@ -180,4 +200,4 @@
 		<loc>https://thesgc.github.io/static-openlabnotebooks/sitemap-pt-page-2018-01.xml</loc>
 		<lastmod>2018-07-12T10:28:58+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: 8982b40ebe6bbe581be30e5c1d9888b3; Queries for sitemap: 6; Total queries: 24; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4.25MB -->
+</sitemapindex><!-- Request ID: 3e5e1f207bd45ce9a9903d9246b2ca5d; Queries for sitemap: 6; Total queries: 25; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 4.5MB -->

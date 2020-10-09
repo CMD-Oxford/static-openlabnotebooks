@@ -797,6 +797,7 @@
 	.pt-cv-colsys [data-cvc="10"] .pt-cv-content-item {width: 10%;}
 	.pt-cv-colsys [data-cvc="11"] .pt-cv-content-item {width: 9.09090909%;}}
 .pt-cv-colsys .pt-cv-content-item {flex: none;max-width: initial;}
+.pt-cv-wrapper .row {display: block;}
 .pt-cv-view a, .pt-cv-wrapper .btn {text-decoration: none !important;outline: 0 !important;font-style: normal;}
 .pt-cv-view a {pointer-events: auto;}
 .pt-cv-readmore {color: #fff;margin: 10px 0;max-width: 100%;}
@@ -818,10 +819,11 @@ h4.pt-cv-title {font-size: 18px;}
 .pt-cv-view+.pagination {float: left;margin: 0 auto !important;}
 .pt-cv-view+.pagination>li {background: 0 0 !important;}
 .pt-cv-view+.pagination>li>a {cursor: pointer;}
-.pt-cv-spinner {width: 15px !important;height: 15px !important;margin-top: -25px;display: inline-block;opacity: 0;filter: alpha(opacity=0);color: #0470ec;-webkit-transition: opacity .25s,width .25s;-moz-transition: opacity .25s,width .25s;-o-transition: opacity .25s,width .25s;transition: opacity .25s,width .25s;}
-.pt-cv-spinner.active {opacity: 1;filter: alpha(opacity=100);}
+.pt-cv-spinner {width: 15px !important;height: 15px !important;margin-top: -25px;display: inline-block;opacity: 0 !important;filter: alpha(opacity=0);color: #0470ec;-webkit-transition: opacity .25s,width .25s;-moz-transition: opacity .25s,width .25s;-o-transition: opacity .25s,width .25s;transition: opacity .25s,width .25s;}
+.pt-cv-spinner.active {opacity: 1 !important;filter: alpha(opacity=100);}
 .pt-cv-clear-pagination {margin-bottom: 50px;}
 .pt-cv-pagination-wrapper {clear: both;position: relative;}
+.pt-cv-pgloadmore+.pt-cv-pagination-wrapper {overflow-anchor: none;}
 .pt-cv-pagination-wrapper .pt-cv-pagination.pagination {-webkit-box-shadow: none !important;box-shadow: none !important;border: 0;padding: 0;margin: initial;min-height: initial;width: auto;display: inline-block;}
 .pt-cv-pagination li {display: inline !important;background-image: none !important;}
 .pt-cv-pagination li:after, .pt-cv-pagination li:before {content: none !important;}
@@ -835,6 +837,7 @@ h4.pt-cv-title {font-size: 18px;}
 .pt-cv-view .collapse {display: none;visibility: hidden;}
 .pt-cv-view .collapse.in {display: block;visibility: visible;overflow: auto;}
 .pt-cv-collapsible .panel-heading br {display: none;}
+.pt-cv-collapsible {overflow-anchor: none;}
 .pt-cv-scrollable {margin-left: 0;margin-right: 0;}
 .pt-cv-scrollable .pt-cv-carousel-caption {text-align: left;bottom: 15px;padding: 10px;}
 .pt-cv-scrollable .pt-cv-carousel-caption * {text-shadow: none;}

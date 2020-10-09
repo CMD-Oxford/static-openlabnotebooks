@@ -1,4 +1,4 @@
-/*! content-views 02-2020 */
+/*! content-views 08-2020 */
 /*!
  * Bootstrap v3.4.1 (http://getbootstrap.com)
  * Copyright 2011-2019 Twitter, Inc.
