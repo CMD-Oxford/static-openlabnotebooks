@@ -839,6 +839,7 @@ h4.pt-cv-title {font-size: 18px;}
 .pt-cv-collapsible .panel-heading br {display: none;}
 .pt-cv-collapsible {overflow-anchor: none;}
 .pt-cv-scrollable {margin-left: 0;margin-right: 0;}
+.pt-cv-scrollable .carousel-inner {opacity: 1;}
 .pt-cv-scrollable .pt-cv-carousel-caption {text-align: left;bottom: 15px;padding: 10px;}
 .pt-cv-scrollable .pt-cv-carousel-caption * {text-shadow: none;}
 .pt-cv-scrollable .pt-cv-title {padding-bottom: 0;}
